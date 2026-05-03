@@ -12,6 +12,24 @@
     { value: 'metaharmony' as const, label: 'Metaharmony' },
     { value: 'elements' as const, label: 'Elements' },
   ];
+
+  const PRIORITY_NAMES = new Set([
+    'major sixth diminished',
+    'minor sixth diminished',
+    'dominant seventh diminished',
+    'dominant seventh flat five diminished',
+  ]);
+
+  function sortNames(names: string[]): { primary: string[]; secondary: string[] } {
+    const priority = names.filter(n => PRIORITY_NAMES.has(n));
+    const messiaen = names.filter(n => n.toLowerCase().includes('messiaen'));
+    const rest = names.filter(n => !PRIORITY_NAMES.has(n) && !n.toLowerCase().includes('messiaen'));
+    const primary = [...priority, ...rest];
+    const secondary = messiaen;
+    // If nothing left as primary, use messiaen names
+    if (primary.length === 0) return { primary: secondary, secondary: [] };
+    return { primary, secondary };
+  }
 </script>
 
 <aside class="w-64 h-full border-r border-neutral-200 p-4 flex flex-col gap-6 overflow-y-auto bg-white">
@@ -65,7 +83,15 @@
       <h2 class="text-sm font-semibold text-neutral-500 uppercase tracking-wide mb-2">Selected</h2>
       {#if appState.viewMode === 'shapes'}
         {@const shape = appState.data.shapes[appState.selectedNodeIndex]}
-        <p class="text-sm font-medium">{shape.modes[0]?.names[0] ?? `Shape ${appState.selectedNodeIndex}`}</p>
+        {@const allNames = shape.modes.flatMap(m => m.names)}
+        {@const sorted = sortNames(allNames)}
+        <p class="text-sm font-medium">{sorted.primary[0] ?? `Shape ${appState.selectedNodeIndex}`}</p>
+        {#if sorted.primary.length > 1}
+          <p class="text-xs text-neutral-500">{sorted.primary.slice(1).join(', ')}</p>
+        {/if}
+        {#if sorted.secondary.length > 0}
+          <p class="text-xs text-neutral-400 italic">{sorted.secondary.join(', ')}</p>
+        {/if}
         <p class="text-xs text-neutral-500">Symmetry: {shape.symmetryOrder}-fold</p>
         <p class="text-xs text-neutral-500">Modes: {shape.modes.length}</p>
       {:else}

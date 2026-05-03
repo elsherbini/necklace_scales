@@ -69,35 +69,133 @@
     appState.selectedNodeIndex = appState.selectedNodeIndex === index ? null : index;
   }
 
-  // Focus mode: which nodes are highlighted
-  const highlightedNodes = $derived.by(() => {
-    if (appState.selectedNodeIndex === null) return null;
-    const neighbors = new Set<number>([appState.selectedNodeIndex]);
-    for (const [s, t] of appState.edges) {
-      if (s === appState.selectedNodeIndex) neighbors.add(t);
-      if (t === appState.selectedNodeIndex) neighbors.add(s);
+  /**
+   * Longest consecutive run of set bits in a 12-bit cyclic bitmask.
+   */
+  function maxChromaticRun(bitmask: number): number {
+    if (bitmask === 0) return 0;
+    let max = 0;
+    let run = 0;
+    // Walk 24 positions to handle wrap-around
+    for (let i = 0; i < 24; i++) {
+      if ((bitmask >> (i % 12)) & 1) {
+        run++;
+        if (run > max) max = run;
+      } else {
+        run = 0;
+      }
     }
-    return neighbors;
+    return max;
+  }
+
+  // Precompute max chromatic run per node (only meaningful for k=8)
+  const nodeColors = $derived.by(() => {
+    if (appState.selectedK !== 8) return null;
+    if (appState.viewMode === 'shapes') {
+      return appState.data.shapes.map(s => maxChromaticRun(s.canonical));
+    } else {
+      return appState.data.scales.map(s => maxChromaticRun(s.bitmask));
+    }
   });
+
+  const RUN_COLORS = [
+    '', // 0 - unused
+    '', // 1 - unused for k=8
+    '#3b82f6', // 2 - blue
+    '#22c55e', // 3 - green
+    '#eab308', // 4 - yellow
+    '#f97316', // 5 - orange
+    '#ef4444', // 6 - red
+    '#a855f7', // 7 - purple
+    '#ec4899', // 8 - pink
+  ];
+
+  function nodeColor(index: number): string | null {
+    if (!nodeColors) return null;
+    const run = nodeColors[index];
+    return run != null ? RUN_COLORS[run] ?? '#6b7280' : null;
+  }
+
+  // BFS distance from selected node
+  const distances = $derived.by(() => {
+    if (appState.selectedNodeIndex === null) return null;
+    const dist = new Map<number, number>();
+    dist.set(appState.selectedNodeIndex, 0);
+    const queue = [appState.selectedNodeIndex];
+    // Build adjacency list
+    const adj = new Map<number, number[]>();
+    for (const [s, t] of appState.edges) {
+      if (!adj.has(s)) adj.set(s, []);
+      if (!adj.has(t)) adj.set(t, []);
+      adj.get(s)!.push(t);
+      adj.get(t)!.push(s);
+    }
+    let i = 0;
+    while (i < queue.length) {
+      const cur = queue[i++];
+      const d = dist.get(cur)!;
+      for (const neighbor of adj.get(cur) ?? []) {
+        if (!dist.has(neighbor)) {
+          dist.set(neighbor, d + 1);
+          queue.push(neighbor);
+        }
+      }
+    }
+    return dist;
+  });
+
+  const maxDist = $derived(
+    distances ? Math.max(...distances.values()) : 0
+  );
+
+  function nodeOpacity(id: number): number {
+    if (!distances) return 1;
+    const d = distances.get(id);
+    if (d === undefined) return 0.05;
+    if (d === 0) return 1;
+    // Fade from 1 at distance 1 to 0.1 at maxDist
+    return Math.max(0.1, 1 - (d - 1) / Math.max(1, maxDist - 1) * 0.9);
+  }
+
+  function edgeDepth(sourceId: number, targetId: number): number | null {
+    if (!distances) return null;
+    const ds = distances.get(sourceId);
+    const dt = distances.get(targetId);
+    if (ds === undefined || dt === undefined) return null;
+    // Edge depth = distance of the closer endpoint to selected node
+    return Math.min(ds, dt);
+  }
 </script>
 
 <div bind:this={container} class="w-full h-full relative">
   {#key tick}
   <svg {width} {height} class="absolute inset-0">
-    <!-- Edges -->
-    {#each simulationLinks as link}
+    <!-- Edges: render higher depth (farther) first so closer edges paint on top -->
+    {#each (distances
+      ? [...simulationLinks].sort((a, b) => {
+          const da = edgeDepth(a.source.id, a.target.id) ?? Infinity;
+          const db = edgeDepth(b.source.id, b.target.id) ?? Infinity;
+          return db - da;
+        })
+      : simulationLinks) as link}
       {#if link.source && link.target}
+        {@const depth = edgeDepth(link.source.id, link.target.id)}
         <line
           x1={link.source.x}
           y1={link.source.y}
           x2={link.target.x}
           y2={link.target.y}
           stroke-width="0.5"
-          class={highlightedNodes === null
+          stroke-opacity={depth === null ? 1 : depth === 0 ? 1 : depth === 1 ? 0.8 : depth === 2 ? 0.5 : 0.15}
+          class={depth === null
             ? 'stroke-neutral-300'
-            : (highlightedNodes.has(link.source.id) && highlightedNodes.has(link.target.id))
-              ? 'stroke-neutral-500'
-              : 'stroke-neutral-100'}
+            : depth === 0
+              ? 'stroke-blue-600'
+              : depth === 1
+                ? 'stroke-blue-400'
+                : depth === 2
+                  ? 'stroke-neutral-400'
+                  : 'stroke-neutral-200'}
         />
       {/if}
     {/each}
@@ -112,11 +210,13 @@
           role="button"
           tabindex="0"
           aria-label="Node {node.id}"
-          class="cursor-pointer {highlightedNodes === null
-            ? 'fill-neutral-600 hover:fill-neutral-900'
-            : highlightedNodes.has(node.id)
-              ? 'fill-neutral-900'
-              : 'fill-neutral-200'}"
+          fill={nodeColor(node.id) ?? ''}
+          opacity={nodeOpacity(node.id)}
+          class="cursor-pointer {nodeColor(node.id)
+            ? 'hover:brightness-125'
+            : (distances === null
+              ? 'fill-neutral-600 hover:fill-neutral-900'
+              : 'fill-neutral-900')}"
           onclick={() => handleNodeClick(node.id)}
           onkeydown={(e: KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') handleNodeClick(node.id); }}
         />
@@ -124,4 +224,16 @@
     {/each}
   </svg>
   {/key}
+
+  {#if appState.selectedK === 8}
+    <div class="absolute bottom-4 right-4 bg-white/90 border border-neutral-200 rounded px-3 py-2 text-xs">
+      <p class="font-medium text-neutral-600 mb-1">Max chromatic run</p>
+      {#each [2, 3, 4, 5, 6, 7, 8] as run}
+        <div class="flex items-center gap-2">
+          <span class="inline-block w-3 h-3 rounded-full" style="background:{RUN_COLORS[run]}"></span>
+          <span class="text-neutral-700">{run}</span>
+        </div>
+      {/each}
+    </div>
+  {/if}
 </div>
