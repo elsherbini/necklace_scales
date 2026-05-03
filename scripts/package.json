@@ -1,0 +1,17 @@
+{
+  "name": "necklace-scales-precompute",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "vitest",
+    "precompute": "tsx src/main.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0",
+    "vitest": "^3.1.0"
+  },
+  "dependencies": {
+    "tonal": "^6.3.0"
+  }
+}
