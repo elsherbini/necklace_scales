@@ -9,9 +9,22 @@ export interface ScaleName {
 }
 
 /**
- * Register Barry Harris scales with tonal's ScaleType.
+ * Register custom chord/scale types with tonal.
  */
 export function registerBarryHarrisScales(): void {
+  // Dyad intervals — both the interval and its inversion
+  // ChordType.add(intervals, aliases, fullName)
+  ChordType.add(['1P', '2m'], ['m2'], 'minor second');
+  ChordType.add(['1P', '7M'], ['M7'], 'major seventh');
+  ChordType.add(['1P', '2M'], ['M2'], 'major second');
+  ChordType.add(['1P', '7m'], ['m7'], 'minor seventh');
+  ChordType.add(['1P', '3m'], ['m3'], 'minor third');
+  ChordType.add(['1P', '6M'], ['M6'], 'major sixth');
+  ChordType.add(['1P', '3M'], ['M3'], 'major third');
+  ChordType.add(['1P', '6m'], ['m6'], 'minor sixth');
+  ChordType.add(['1P', '4P'], ['P4'], 'perfect fourth');
+  ChordType.add(['1P', '4A'], ['TT'], 'tritone');
+
   // Maj6 diminished: C D E F G Ab A B
   // Semitones from root: 0,2,4,5,7,8,9,11
   ScaleType.add(

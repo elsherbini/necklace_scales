@@ -7,11 +7,15 @@
       "modes": [
         {
           "rotation": 0,
-          "names": []
+          "names": [
+            "minor second"
+          ]
         },
         {
           "rotation": 11,
-          "names": []
+          "names": [
+            "major seventh"
+          ]
         }
       ],
       "displayBitmask": 3
@@ -22,11 +26,15 @@
       "modes": [
         {
           "rotation": 0,
-          "names": []
+          "names": [
+            "major second"
+          ]
         },
         {
           "rotation": 10,
-          "names": []
+          "names": [
+            "minor seventh"
+          ]
         }
       ],
       "displayBitmask": 5
@@ -37,11 +45,15 @@
       "modes": [
         {
           "rotation": 0,
-          "names": []
+          "names": [
+            "minor third"
+          ]
         },
         {
           "rotation": 9,
-          "names": []
+          "names": [
+            "major sixth"
+          ]
         }
       ],
       "displayBitmask": 9
@@ -52,11 +64,15 @@
       "modes": [
         {
           "rotation": 0,
-          "names": []
+          "names": [
+            "major third"
+          ]
         },
         {
           "rotation": 8,
-          "names": []
+          "names": [
+            "minor sixth"
+          ]
         }
       ],
       "displayBitmask": 17
@@ -68,13 +84,13 @@
         {
           "rotation": 0,
           "names": [
-            "F fifth"
+            "perfect fourth"
           ]
         },
         {
           "rotation": 7,
           "names": [
-            "C fifth"
+            "fifth"
           ]
         }
       ],
@@ -86,7 +102,9 @@
       "modes": [
         {
           "rotation": 0,
-          "names": []
+          "names": [
+            "tritone"
+          ]
         }
       ],
       "displayBitmask": 65
@@ -101,7 +119,16 @@
       ],
       "shapeIndex": 0,
       "rotation": 0,
-      "names": []
+      "names": [
+        {
+          "root": "C",
+          "name": "minor second"
+        },
+        {
+          "root": "Db",
+          "name": "major seventh"
+        }
+      ]
     },
     {
       "bitmask": 5,
@@ -111,7 +138,16 @@
       ],
       "shapeIndex": 1,
       "rotation": 0,
-      "names": []
+      "names": [
+        {
+          "root": "C",
+          "name": "major second"
+        },
+        {
+          "root": "D",
+          "name": "minor seventh"
+        }
+      ]
     },
     {
       "bitmask": 6,
@@ -121,7 +157,16 @@
       ],
       "shapeIndex": 0,
       "rotation": 1,
-      "names": []
+      "names": [
+        {
+          "root": "Db",
+          "name": "minor second"
+        },
+        {
+          "root": "D",
+          "name": "major seventh"
+        }
+      ]
     },
     {
       "bitmask": 9,
@@ -131,7 +176,16 @@
       ],
       "shapeIndex": 2,
       "rotation": 0,
-      "names": []
+      "names": [
+        {
+          "root": "C",
+          "name": "minor third"
+        },
+        {
+          "root": "Eb",
+          "name": "major sixth"
+        }
+      ]
     },
     {
       "bitmask": 10,
@@ -141,7 +195,16 @@
       ],
       "shapeIndex": 1,
       "rotation": 1,
-      "names": []
+      "names": [
+        {
+          "root": "Db",
+          "name": "major second"
+        },
+        {
+          "root": "Eb",
+          "name": "minor seventh"
+        }
+      ]
     },
     {
       "bitmask": 12,
@@ -151,7 +214,16 @@
       ],
       "shapeIndex": 0,
       "rotation": 2,
-      "names": []
+      "names": [
+        {
+          "root": "D",
+          "name": "minor second"
+        },
+        {
+          "root": "Eb",
+          "name": "major seventh"
+        }
+      ]
     },
     {
       "bitmask": 17,
@@ -161,7 +233,16 @@
       ],
       "shapeIndex": 3,
       "rotation": 0,
-      "names": []
+      "names": [
+        {
+          "root": "C",
+          "name": "major third"
+        },
+        {
+          "root": "E",
+          "name": "minor sixth"
+        }
+      ]
     },
     {
       "bitmask": 18,
@@ -171,7 +252,16 @@
       ],
       "shapeIndex": 2,
       "rotation": 1,
-      "names": []
+      "names": [
+        {
+          "root": "Db",
+          "name": "minor third"
+        },
+        {
+          "root": "E",
+          "name": "major sixth"
+        }
+      ]
     },
     {
       "bitmask": 20,
@@ -181,7 +271,16 @@
       ],
       "shapeIndex": 1,
       "rotation": 2,
-      "names": []
+      "names": [
+        {
+          "root": "D",
+          "name": "major second"
+        },
+        {
+          "root": "E",
+          "name": "minor seventh"
+        }
+      ]
     },
     {
       "bitmask": 24,
@@ -191,7 +290,16 @@
       ],
       "shapeIndex": 0,
       "rotation": 3,
-      "names": []
+      "names": [
+        {
+          "root": "Eb",
+          "name": "minor second"
+        },
+        {
+          "root": "E",
+          "name": "major seventh"
+        }
+      ]
     },
     {
       "bitmask": 33,
@@ -205,6 +313,10 @@
         {
           "root": "F",
           "name": "fifth"
+        },
+        {
+          "root": "C",
+          "name": "perfect fourth"
         }
       ]
     },
@@ -216,7 +328,16 @@
       ],
       "shapeIndex": 3,
       "rotation": 1,
-      "names": []
+      "names": [
+        {
+          "root": "Db",
+          "name": "major third"
+        },
+        {
+          "root": "F",
+          "name": "minor sixth"
+        }
+      ]
     },
     {
       "bitmask": 36,
@@ -226,7 +347,16 @@
       ],
       "shapeIndex": 2,
       "rotation": 2,
-      "names": []
+      "names": [
+        {
+          "root": "D",
+          "name": "minor third"
+        },
+        {
+          "root": "F",
+          "name": "major sixth"
+        }
+      ]
     },
     {
       "bitmask": 40,
@@ -236,7 +366,16 @@
       ],
       "shapeIndex": 1,
       "rotation": 3,
-      "names": []
+      "names": [
+        {
+          "root": "Eb",
+          "name": "major second"
+        },
+        {
+          "root": "F",
+          "name": "minor seventh"
+        }
+      ]
     },
     {
       "bitmask": 48,
@@ -246,7 +385,16 @@
       ],
       "shapeIndex": 0,
       "rotation": 4,
-      "names": []
+      "names": [
+        {
+          "root": "E",
+          "name": "minor second"
+        },
+        {
+          "root": "F",
+          "name": "major seventh"
+        }
+      ]
     },
     {
       "bitmask": 65,
@@ -256,7 +404,16 @@
       ],
       "shapeIndex": 5,
       "rotation": 0,
-      "names": []
+      "names": [
+        {
+          "root": "C",
+          "name": "tritone"
+        },
+        {
+          "root": "Gb",
+          "name": "tritone"
+        }
+      ]
     },
     {
       "bitmask": 66,
@@ -270,6 +427,10 @@
         {
           "root": "Gb",
           "name": "fifth"
+        },
+        {
+          "root": "Db",
+          "name": "perfect fourth"
         }
       ]
     },
@@ -281,7 +442,16 @@
       ],
       "shapeIndex": 3,
       "rotation": 2,
-      "names": []
+      "names": [
+        {
+          "root": "D",
+          "name": "major third"
+        },
+        {
+          "root": "Gb",
+          "name": "minor sixth"
+        }
+      ]
     },
     {
       "bitmask": 72,
@@ -291,7 +461,16 @@
       ],
       "shapeIndex": 2,
       "rotation": 3,
-      "names": []
+      "names": [
+        {
+          "root": "Eb",
+          "name": "minor third"
+        },
+        {
+          "root": "Gb",
+          "name": "major sixth"
+        }
+      ]
     },
     {
       "bitmask": 80,
@@ -301,7 +480,16 @@
       ],
       "shapeIndex": 1,
       "rotation": 4,
-      "names": []
+      "names": [
+        {
+          "root": "E",
+          "name": "major second"
+        },
+        {
+          "root": "Gb",
+          "name": "minor seventh"
+        }
+      ]
     },
     {
       "bitmask": 96,
@@ -311,7 +499,16 @@
       ],
       "shapeIndex": 0,
       "rotation": 5,
-      "names": []
+      "names": [
+        {
+          "root": "F",
+          "name": "minor second"
+        },
+        {
+          "root": "Gb",
+          "name": "major seventh"
+        }
+      ]
     },
     {
       "bitmask": 129,
@@ -325,6 +522,10 @@
         {
           "root": "C",
           "name": "fifth"
+        },
+        {
+          "root": "G",
+          "name": "perfect fourth"
         }
       ]
     },
@@ -336,7 +537,16 @@
       ],
       "shapeIndex": 5,
       "rotation": 1,
-      "names": []
+      "names": [
+        {
+          "root": "Db",
+          "name": "tritone"
+        },
+        {
+          "root": "G",
+          "name": "tritone"
+        }
+      ]
     },
     {
       "bitmask": 132,
@@ -350,6 +560,10 @@
         {
           "root": "G",
           "name": "fifth"
+        },
+        {
+          "root": "D",
+          "name": "perfect fourth"
         }
       ]
     },
@@ -361,7 +575,16 @@
       ],
       "shapeIndex": 3,
       "rotation": 3,
-      "names": []
+      "names": [
+        {
+          "root": "Eb",
+          "name": "major third"
+        },
+        {
+          "root": "G",
+          "name": "minor sixth"
+        }
+      ]
     },
     {
       "bitmask": 144,
@@ -371,7 +594,16 @@
       ],
       "shapeIndex": 2,
       "rotation": 4,
-      "names": []
+      "names": [
+        {
+          "root": "E",
+          "name": "minor third"
+        },
+        {
+          "root": "G",
+          "name": "major sixth"
+        }
+      ]
     },
     {
       "bitmask": 160,
@@ -381,7 +613,16 @@
       ],
       "shapeIndex": 1,
       "rotation": 5,
-      "names": []
+      "names": [
+        {
+          "root": "F",
+          "name": "major second"
+        },
+        {
+          "root": "G",
+          "name": "minor seventh"
+        }
+      ]
     },
     {
       "bitmask": 192,
@@ -391,7 +632,16 @@
       ],
       "shapeIndex": 0,
       "rotation": 6,
-      "names": []
+      "names": [
+        {
+          "root": "Gb",
+          "name": "minor second"
+        },
+        {
+          "root": "G",
+          "name": "major seventh"
+        }
+      ]
     },
     {
       "bitmask": 257,
@@ -401,7 +651,16 @@
       ],
       "shapeIndex": 3,
       "rotation": 8,
-      "names": []
+      "names": [
+        {
+          "root": "Ab",
+          "name": "major third"
+        },
+        {
+          "root": "C",
+          "name": "minor sixth"
+        }
+      ]
     },
     {
       "bitmask": 258,
@@ -415,6 +674,10 @@
         {
           "root": "Db",
           "name": "fifth"
+        },
+        {
+          "root": "Ab",
+          "name": "perfect fourth"
         }
       ]
     },
@@ -426,7 +689,16 @@
       ],
       "shapeIndex": 5,
       "rotation": 2,
-      "names": []
+      "names": [
+        {
+          "root": "D",
+          "name": "tritone"
+        },
+        {
+          "root": "Ab",
+          "name": "tritone"
+        }
+      ]
     },
     {
       "bitmask": 264,
@@ -440,6 +712,10 @@
         {
           "root": "Ab",
           "name": "fifth"
+        },
+        {
+          "root": "Eb",
+          "name": "perfect fourth"
         }
       ]
     },
@@ -451,7 +727,16 @@
       ],
       "shapeIndex": 3,
       "rotation": 4,
-      "names": []
+      "names": [
+        {
+          "root": "E",
+          "name": "major third"
+        },
+        {
+          "root": "Ab",
+          "name": "minor sixth"
+        }
+      ]
     },
     {
       "bitmask": 288,
@@ -461,7 +746,16 @@
       ],
       "shapeIndex": 2,
       "rotation": 5,
-      "names": []
+      "names": [
+        {
+          "root": "F",
+          "name": "minor third"
+        },
+        {
+          "root": "Ab",
+          "name": "major sixth"
+        }
+      ]
     },
     {
       "bitmask": 320,
@@ -471,7 +765,16 @@
       ],
       "shapeIndex": 1,
       "rotation": 6,
-      "names": []
+      "names": [
+        {
+          "root": "Gb",
+          "name": "major second"
+        },
+        {
+          "root": "Ab",
+          "name": "minor seventh"
+        }
+      ]
     },
     {
       "bitmask": 384,
@@ -481,7 +784,16 @@
       ],
       "shapeIndex": 0,
       "rotation": 7,
-      "names": []
+      "names": [
+        {
+          "root": "G",
+          "name": "minor second"
+        },
+        {
+          "root": "Ab",
+          "name": "major seventh"
+        }
+      ]
     },
     {
       "bitmask": 513,
@@ -491,7 +803,16 @@
       ],
       "shapeIndex": 2,
       "rotation": 9,
-      "names": []
+      "names": [
+        {
+          "root": "A",
+          "name": "minor third"
+        },
+        {
+          "root": "C",
+          "name": "major sixth"
+        }
+      ]
     },
     {
       "bitmask": 514,
@@ -501,7 +822,16 @@
       ],
       "shapeIndex": 3,
       "rotation": 9,
-      "names": []
+      "names": [
+        {
+          "root": "A",
+          "name": "major third"
+        },
+        {
+          "root": "Db",
+          "name": "minor sixth"
+        }
+      ]
     },
     {
       "bitmask": 516,
@@ -515,6 +845,10 @@
         {
           "root": "D",
           "name": "fifth"
+        },
+        {
+          "root": "A",
+          "name": "perfect fourth"
         }
       ]
     },
@@ -526,7 +860,16 @@
       ],
       "shapeIndex": 5,
       "rotation": 3,
-      "names": []
+      "names": [
+        {
+          "root": "Eb",
+          "name": "tritone"
+        },
+        {
+          "root": "A",
+          "name": "tritone"
+        }
+      ]
     },
     {
       "bitmask": 528,
@@ -540,6 +883,10 @@
         {
           "root": "A",
           "name": "fifth"
+        },
+        {
+          "root": "E",
+          "name": "perfect fourth"
         }
       ]
     },
@@ -551,7 +898,16 @@
       ],
       "shapeIndex": 3,
       "rotation": 5,
-      "names": []
+      "names": [
+        {
+          "root": "F",
+          "name": "major third"
+        },
+        {
+          "root": "A",
+          "name": "minor sixth"
+        }
+      ]
     },
     {
       "bitmask": 576,
@@ -561,7 +917,16 @@
       ],
       "shapeIndex": 2,
       "rotation": 6,
-      "names": []
+      "names": [
+        {
+          "root": "Gb",
+          "name": "minor third"
+        },
+        {
+          "root": "A",
+          "name": "major sixth"
+        }
+      ]
     },
     {
       "bitmask": 640,
@@ -571,7 +936,16 @@
       ],
       "shapeIndex": 1,
       "rotation": 7,
-      "names": []
+      "names": [
+        {
+          "root": "G",
+          "name": "major second"
+        },
+        {
+          "root": "A",
+          "name": "minor seventh"
+        }
+      ]
     },
     {
       "bitmask": 768,
@@ -581,7 +955,16 @@
       ],
       "shapeIndex": 0,
       "rotation": 8,
-      "names": []
+      "names": [
+        {
+          "root": "Ab",
+          "name": "minor second"
+        },
+        {
+          "root": "A",
+          "name": "major seventh"
+        }
+      ]
     },
     {
       "bitmask": 1025,
@@ -591,7 +974,16 @@
       ],
       "shapeIndex": 1,
       "rotation": 10,
-      "names": []
+      "names": [
+        {
+          "root": "Bb",
+          "name": "major second"
+        },
+        {
+          "root": "C",
+          "name": "minor seventh"
+        }
+      ]
     },
     {
       "bitmask": 1026,
@@ -601,7 +993,16 @@
       ],
       "shapeIndex": 2,
       "rotation": 10,
-      "names": []
+      "names": [
+        {
+          "root": "Bb",
+          "name": "minor third"
+        },
+        {
+          "root": "Db",
+          "name": "major sixth"
+        }
+      ]
     },
     {
       "bitmask": 1028,
@@ -611,7 +1012,16 @@
       ],
       "shapeIndex": 3,
       "rotation": 10,
-      "names": []
+      "names": [
+        {
+          "root": "Bb",
+          "name": "major third"
+        },
+        {
+          "root": "D",
+          "name": "minor sixth"
+        }
+      ]
     },
     {
       "bitmask": 1032,
@@ -625,6 +1035,10 @@
         {
           "root": "Eb",
           "name": "fifth"
+        },
+        {
+          "root": "Bb",
+          "name": "perfect fourth"
         }
       ]
     },
@@ -636,7 +1050,16 @@
       ],
       "shapeIndex": 5,
       "rotation": 4,
-      "names": []
+      "names": [
+        {
+          "root": "E",
+          "name": "tritone"
+        },
+        {
+          "root": "Bb",
+          "name": "tritone"
+        }
+      ]
     },
     {
       "bitmask": 1056,
@@ -650,6 +1073,10 @@
         {
           "root": "Bb",
           "name": "fifth"
+        },
+        {
+          "root": "F",
+          "name": "perfect fourth"
         }
       ]
     },
@@ -661,7 +1088,16 @@
       ],
       "shapeIndex": 3,
       "rotation": 6,
-      "names": []
+      "names": [
+        {
+          "root": "Gb",
+          "name": "major third"
+        },
+        {
+          "root": "Bb",
+          "name": "minor sixth"
+        }
+      ]
     },
     {
       "bitmask": 1152,
@@ -671,7 +1107,16 @@
       ],
       "shapeIndex": 2,
       "rotation": 7,
-      "names": []
+      "names": [
+        {
+          "root": "G",
+          "name": "minor third"
+        },
+        {
+          "root": "Bb",
+          "name": "major sixth"
+        }
+      ]
     },
     {
       "bitmask": 1280,
@@ -681,7 +1126,16 @@
       ],
       "shapeIndex": 1,
       "rotation": 8,
-      "names": []
+      "names": [
+        {
+          "root": "Ab",
+          "name": "major second"
+        },
+        {
+          "root": "Bb",
+          "name": "minor seventh"
+        }
+      ]
     },
     {
       "bitmask": 1536,
@@ -691,7 +1145,16 @@
       ],
       "shapeIndex": 0,
       "rotation": 9,
-      "names": []
+      "names": [
+        {
+          "root": "A",
+          "name": "minor second"
+        },
+        {
+          "root": "Bb",
+          "name": "major seventh"
+        }
+      ]
     },
     {
       "bitmask": 2049,
@@ -701,7 +1164,16 @@
       ],
       "shapeIndex": 0,
       "rotation": 11,
-      "names": []
+      "names": [
+        {
+          "root": "B",
+          "name": "minor second"
+        },
+        {
+          "root": "C",
+          "name": "major seventh"
+        }
+      ]
     },
     {
       "bitmask": 2050,
@@ -711,7 +1183,16 @@
       ],
       "shapeIndex": 1,
       "rotation": 11,
-      "names": []
+      "names": [
+        {
+          "root": "B",
+          "name": "major second"
+        },
+        {
+          "root": "Db",
+          "name": "minor seventh"
+        }
+      ]
     },
     {
       "bitmask": 2052,
@@ -721,7 +1202,16 @@
       ],
       "shapeIndex": 2,
       "rotation": 11,
-      "names": []
+      "names": [
+        {
+          "root": "B",
+          "name": "minor third"
+        },
+        {
+          "root": "D",
+          "name": "major sixth"
+        }
+      ]
     },
     {
       "bitmask": 2056,
@@ -731,7 +1221,16 @@
       ],
       "shapeIndex": 3,
       "rotation": 11,
-      "names": []
+      "names": [
+        {
+          "root": "B",
+          "name": "major third"
+        },
+        {
+          "root": "Eb",
+          "name": "minor sixth"
+        }
+      ]
     },
     {
       "bitmask": 2064,
@@ -745,6 +1244,10 @@
         {
           "root": "E",
           "name": "fifth"
+        },
+        {
+          "root": "B",
+          "name": "perfect fourth"
         }
       ]
     },
@@ -756,7 +1259,16 @@
       ],
       "shapeIndex": 5,
       "rotation": 5,
-      "names": []
+      "names": [
+        {
+          "root": "F",
+          "name": "tritone"
+        },
+        {
+          "root": "B",
+          "name": "tritone"
+        }
+      ]
     },
     {
       "bitmask": 2112,
@@ -770,6 +1282,10 @@
         {
           "root": "B",
           "name": "fifth"
+        },
+        {
+          "root": "Gb",
+          "name": "perfect fourth"
         }
       ]
     },
@@ -781,7 +1297,16 @@
       ],
       "shapeIndex": 3,
       "rotation": 7,
-      "names": []
+      "names": [
+        {
+          "root": "G",
+          "name": "major third"
+        },
+        {
+          "root": "B",
+          "name": "minor sixth"
+        }
+      ]
     },
     {
       "bitmask": 2304,
@@ -791,7 +1316,16 @@
       ],
       "shapeIndex": 2,
       "rotation": 8,
-      "names": []
+      "names": [
+        {
+          "root": "Ab",
+          "name": "minor third"
+        },
+        {
+          "root": "B",
+          "name": "major sixth"
+        }
+      ]
     },
     {
       "bitmask": 2560,
@@ -801,7 +1335,16 @@
       ],
       "shapeIndex": 1,
       "rotation": 9,
-      "names": []
+      "names": [
+        {
+          "root": "A",
+          "name": "major second"
+        },
+        {
+          "root": "B",
+          "name": "minor seventh"
+        }
+      ]
     },
     {
       "bitmask": 3072,
@@ -811,7 +1354,16 @@
       ],
       "shapeIndex": 0,
       "rotation": 10,
-      "names": []
+      "names": [
+        {
+          "root": "Bb",
+          "name": "minor second"
+        },
+        {
+          "root": "B",
+          "name": "major seventh"
+        }
+      ]
     }
   ],
   "shapeEdges": [

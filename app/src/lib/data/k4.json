@@ -283,27 +283,21 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "D altered"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "C altered"
+            "altered"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "B altered"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "Ab altered"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1043
@@ -337,27 +331,21 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "D 9no5"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "C 9no5"
+            "9no5"
           ]
         },
         {
           "rotation": 8,
-          "names": [
-            "Bb 9no5"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "Ab 9no5"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 85
@@ -530,26 +518,20 @@
         {
           "rotation": 0,
           "names": [
-            "C madd9"
+            "madd9"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "Bb madd9"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "A madd9"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "F madd9"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1059
@@ -561,30 +543,22 @@
         {
           "rotation": 0,
           "names": [
-            "Db oM7",
-            "C Maddb9"
+            "Maddb9"
           ]
         },
         {
           "rotation": 11,
           "names": [
-            "C oM7",
-            "B Maddb9"
+            "oM7"
           ]
         },
         {
           "rotation": 8,
-          "names": [
-            "A oM7",
-            "Ab Maddb9"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "Gb oM7",
-            "F Maddb9"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 147
@@ -596,30 +570,22 @@
         {
           "rotation": 0,
           "names": [
-            "E m7#5",
-            "C Madd9"
+            "Madd9"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "D m7#5",
-            "Bb Madd9"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
           "names": [
-            "C m7#5",
-            "Ab Madd9"
+            "m7#5"
           ]
         },
         {
           "rotation": 5,
-          "names": [
-            "A m7#5",
-            "F Madd9"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 149
@@ -630,27 +596,21 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "E mb6M7"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "Db mb6M7"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
           "names": [
-            "C mb6M7"
+            "mb6M7"
           ]
         },
         {
           "rotation": 5,
-          "names": [
-            "A mb6M7"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 531
@@ -661,27 +621,21 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db M7b5"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C M7b5"
+            "M7b5"
           ]
         },
         {
           "rotation": 7,
-          "names": [
-            "Ab M7b5"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "Gb M7b5"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 163
@@ -693,33 +647,23 @@
         {
           "rotation": 0,
           "names": [
-            "G suspended fourth seventh",
-            "D 4",
-            "C sus24"
+            "sus24"
           ]
         },
         {
           "rotation": 10,
           "names": [
-            "F suspended fourth seventh",
-            "C 4",
-            "Bb sus24"
+            "4"
           ]
         },
         {
           "rotation": 7,
-          "names": [
-            "D suspended fourth seventh",
-            "A 4",
-            "G sus24"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
           "names": [
-            "C suspended fourth seventh",
-            "G 4",
-            "F sus24"
+            "suspended fourth seventh"
           ]
         }
       ],
@@ -732,29 +676,21 @@
         {
           "rotation": 0,
           "names": [
-            "G 7#5sus4",
-            "C madd4"
+            "madd4"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "E 7#5sus4",
-            "A madd4"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "D 7#5sus4",
-            "G madd4"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
           "names": [
-            "C 7#5sus4",
-            "F madd4"
+            "7#5sus4"
           ]
         }
       ],
@@ -766,27 +702,21 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "E mb6b9"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
           "names": [
-            "C mb6b9"
+            "mb6b9"
           ]
         },
         {
           "rotation": 7,
-          "names": [
-            "B mb6b9"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "A mb6b9"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 267
@@ -812,26 +742,20 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "G M7sus4"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "F M7sus4"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "Db M7sus4"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
           "names": [
-            "C M7sus4"
+            "M7sus4"
           ]
         }
       ],
@@ -843,26 +767,20 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "G M7#5sus4"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "E M7#5sus4"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "Db M7#5sus4"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
           "names": [
-            "C M7#5sus4"
+            "M7#5sus4"
           ]
         }
       ],
@@ -897,27 +815,21 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db minor/major seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C minor/major seventh"
+            "minor/major seventh"
           ]
         },
         {
           "rotation": 8,
-          "names": [
-            "A minor/major seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "F minor/major seventh"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 275
@@ -929,34 +841,23 @@
         {
           "rotation": 0,
           "names": [
-            "E 7#5",
-            "E 7b13",
-            "C M#5add9"
+            "M#5add9"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "D 7#5",
-            "D 7b13",
-            "Bb M#5add9"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
           "names": [
-            "C 7#5",
-            "C 7b13",
-            "Ab M#5add9"
+            "7#5",
+            "7b13"
           ]
         },
         {
           "rotation": 4,
-          "names": [
-            "Ab 7#5",
-            "Ab 7b13",
-            "E M#5add9"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 277
@@ -968,34 +869,23 @@
         {
           "rotation": 0,
           "names": [
-            "E major seventh flat sixth",
-            "E augmented seventh",
-            "C +add#9"
+            "+add#9"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "Db major seventh flat sixth",
-            "Db augmented seventh",
-            "A +add#9"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
           "names": [
-            "C major seventh flat sixth",
-            "C augmented seventh",
-            "Ab +add#9"
+            "major seventh flat sixth",
+            "augmented seventh"
           ]
         },
         {
           "rotation": 4,
-          "names": [
-            "Ab major seventh flat sixth",
-            "Ab augmented seventh",
-            "E +add#9"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 547
@@ -1006,27 +896,21 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db major seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C major seventh"
+            "major seventh"
           ]
         },
         {
           "rotation": 7,
-          "names": [
-            "Ab major seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "F major seventh"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 291
@@ -1037,31 +921,23 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "F minor sixth",
-            "D half-diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "Eb minor sixth",
-            "C half-diminished"
+            "half-diminished"
           ]
         },
         {
           "rotation": 7,
           "names": [
-            "C minor sixth",
-            "A half-diminished"
+            "minor sixth"
           ]
         },
         {
           "rotation": 4,
-          "names": [
-            "A minor sixth",
-            "Gb half-diminished"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 293
@@ -1072,30 +948,22 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab sixth",
-            "F minor seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "F sixth",
-            "D minor seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
           "names": [
-            "Eb sixth",
-            "C minor seventh"
+            "minor seventh"
           ]
         },
         {
           "rotation": 4,
           "names": [
-            "C sixth",
-            "A minor seventh"
+            "sixth"
           ]
         }
       ],
@@ -1107,16 +975,12 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "D 7b5",
-            "Ab 7b5"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "C 7b5",
-            "Gb 7b5"
+            "7b5"
           ]
         }
       ],
@@ -1128,26 +992,20 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab dominant seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "F dominant seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "D dominant seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C dominant seventh"
+            "dominant seventh"
           ]
         }
       ],
@@ -1160,10 +1018,7 @@
         {
           "rotation": 0,
           "names": [
-            "C diminished seventh",
-            "Eb diminished seventh",
-            "Gb diminished seventh",
-            "A diminished seventh"
+            "diminished seventh"
           ]
         }
       ],

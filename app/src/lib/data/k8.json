@@ -826,51 +826,37 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab purvi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "G purvi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "Gb purvi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "F purvi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "E purvi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "Db purvi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C purvi raga"
+            "purvi raga"
           ]
         },
         {
           "rotation": 3,
-          "names": [
-            "B purvi raga"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 927
@@ -1037,31 +1023,21 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db messiaen's mode #4",
-            "G messiaen's mode #4"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C messiaen's mode #4",
-            "Gb messiaen's mode #4"
+            "messiaen's mode #4"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "F messiaen's mode #4",
-            "B messiaen's mode #4"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "E messiaen's mode #4",
-            "Bb messiaen's mode #4"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 975
@@ -1072,50 +1048,36 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "A kafi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "Ab kafi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "G kafi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "F kafi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "Eb kafi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "D kafi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "Db kafi raga"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
           "names": [
-            "C kafi raga"
+            "kafi raga"
           ]
         }
       ],
@@ -1478,74 +1440,42 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Eb bebop",
-            "Bb bebop minor",
-            "G bebop locrian",
-            "Ab ichikosucho"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "D bebop",
-            "A bebop minor",
-            "Gb bebop locrian",
-            "G ichikosucho"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "Db bebop",
-            "Ab bebop minor",
-            "F bebop locrian",
-            "Gb ichikosucho"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
           "names": [
-            "C bebop",
-            "G bebop minor",
-            "E bebop locrian",
-            "F ichikosucho"
+            "bebop"
           ]
         },
         {
           "rotation": 7,
-          "names": [
-            "Bb bebop",
-            "F bebop minor",
-            "D bebop locrian",
-            "Eb ichikosucho"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
           "names": [
-            "Ab bebop",
-            "Eb bebop minor",
-            "C bebop locrian",
-            "Db ichikosucho"
+            "bebop locrian"
           ]
         },
         {
           "rotation": 4,
           "names": [
-            "G bebop",
-            "D bebop minor",
-            "B bebop locrian",
-            "C ichikosucho"
+            "ichikosucho"
           ]
         },
         {
           "rotation": 2,
           "names": [
-            "F bebop",
-            "C bebop minor",
-            "A bebop locrian",
-            "Bb ichikosucho"
+            "bebop minor"
           ]
         }
       ],
@@ -1557,59 +1487,38 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "F minor six diminished",
-            "F minor sixth diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "E minor six diminished",
-            "E minor sixth diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "Eb minor six diminished",
-            "Eb minor sixth diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "Db minor six diminished",
-            "Db minor sixth diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
           "names": [
-            "C minor six diminished",
-            "C minor sixth diminished"
+            "minor six diminished",
+            "minor sixth diminished"
           ]
         },
         {
           "rotation": 5,
-          "names": [
-            "Bb minor six diminished",
-            "Bb minor sixth diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "A minor six diminished",
-            "A minor sixth diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 2,
-          "names": [
-            "G minor six diminished",
-            "G minor sixth diminished"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1463
@@ -1621,74 +1530,41 @@
         {
           "rotation": 0,
           "names": [
-            "C spanish heptatonic",
-            "Ab bebop major",
-            "F minor bebop",
-            "Ab major sixth diminished"
+            "spanish heptatonic"
           ]
         },
         {
           "rotation": 11,
-          "names": [
-            "B spanish heptatonic",
-            "G bebop major",
-            "E minor bebop",
-            "G major sixth diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "A spanish heptatonic",
-            "F bebop major",
-            "D minor bebop",
-            "F major sixth diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "Ab spanish heptatonic",
-            "E bebop major",
-            "Db minor bebop",
-            "E major sixth diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
           "names": [
-            "G spanish heptatonic",
-            "Eb bebop major",
-            "C minor bebop",
-            "Eb major sixth diminished"
+            "minor bebop"
           ]
         },
         {
           "rotation": 5,
-          "names": [
-            "F spanish heptatonic",
-            "Db bebop major",
-            "Bb minor bebop",
-            "Db major sixth diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "E spanish heptatonic",
-            "C bebop major",
-            "A minor bebop",
-            "C major sixth diminished"
+            "bebop major",
+            "major sixth diminished"
           ]
         },
         {
           "rotation": 2,
-          "names": [
-            "D spanish heptatonic",
-            "Bb bebop major",
-            "G minor bebop",
-            "Bb major sixth diminished"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1719
@@ -1699,39 +1575,22 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "D messiaen's mode #6",
-            "Ab messiaen's mode #6",
-            "D dominant seventh flat five diminished",
-            "Ab dominant seventh flat five diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "Db messiaen's mode #6",
-            "G messiaen's mode #6",
-            "Db dominant seventh flat five diminished",
-            "G dominant seventh flat five diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "C messiaen's mode #6",
-            "Gb messiaen's mode #6",
-            "C dominant seventh flat five diminished",
-            "Gb dominant seventh flat five diminished"
+            "messiaen's mode #6",
+            "dominant seventh flat five diminished"
           ]
         },
         {
           "rotation": 8,
-          "names": [
-            "E messiaen's mode #6",
-            "Bb messiaen's mode #6",
-            "E dominant seventh flat five diminished",
-            "Bb dominant seventh flat five diminished"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1495
@@ -1742,51 +1601,37 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab dominant seventh diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "G dominant seventh diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "F dominant seventh diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "E dominant seventh diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "D dominant seventh diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "Db dominant seventh diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C dominant seventh diminished"
+            "dominant seventh diminished"
           ]
         },
         {
           "rotation": 2,
-          "names": [
-            "Bb dominant seventh diminished"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1751
@@ -1798,27 +1643,13 @@
         {
           "rotation": 0,
           "names": [
-            "Db diminished",
-            "E diminished",
-            "G diminished",
-            "Bb diminished",
-            "C half-whole diminished",
-            "Eb half-whole diminished",
-            "Gb half-whole diminished",
-            "A half-whole diminished"
+            "half-whole diminished"
           ]
         },
         {
           "rotation": 11,
           "names": [
-            "C diminished",
-            "Eb diminished",
-            "Gb diminished",
-            "A diminished",
-            "D half-whole diminished",
-            "F half-whole diminished",
-            "Ab half-whole diminished",
-            "B half-whole diminished"
+            "diminished"
           ]
         }
       ],

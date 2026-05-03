@@ -216,21 +216,17 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "D 7no5"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "C 7no5"
+            "7no5"
           ]
         },
         {
           "rotation": 6,
-          "names": [
-            "Ab 7no5"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 69
@@ -242,20 +238,16 @@
         {
           "rotation": 0,
           "names": [
-            "C diminished"
+            "diminished"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "A diminished"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "Gb diminished"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 73
@@ -267,20 +259,16 @@
         {
           "rotation": 0,
           "names": [
-            "C Mb5"
+            "Mb5"
           ]
         },
         {
           "rotation": 8,
-          "names": [
-            "Ab Mb5"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "Gb Mb5"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 81
@@ -311,22 +299,17 @@
         {
           "rotation": 0,
           "names": [
-            "G suspended fourth",
-            "C suspended second"
+            "suspended second"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "F suspended fourth",
-            "Bb suspended second"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
           "names": [
-            "C suspended fourth",
-            "F suspended second"
+            "suspended fourth"
           ]
         }
       ],
@@ -339,20 +322,16 @@
         {
           "rotation": 0,
           "names": [
-            "C minor"
+            "minor"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "A minor"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "F minor"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 137
@@ -364,23 +343,18 @@
         {
           "rotation": 0,
           "names": [
-            "C major",
-            "E minor augmented"
+            "major"
           ]
         },
         {
           "rotation": 8,
           "names": [
-            "Ab major",
-            "C minor augmented"
+            "minor augmented"
           ]
         },
         {
           "rotation": 5,
-          "names": [
-            "F major",
-            "A minor augmented"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 145
@@ -392,9 +366,7 @@
         {
           "rotation": 0,
           "names": [
-            "C augmented",
-            "E augmented",
-            "Ab augmented"
+            "augmented"
           ]
         }
       ],

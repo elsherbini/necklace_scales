@@ -1,4 +1,4 @@
-import { rotate, canonical, pitchClassesFromBitmask } from './bitmask.js';
+import { rotate, canonical, pitchClassesFromBitmask, bitmaskFromPitchClasses } from './bitmask.js';
 import { enumerateScales, groupByShape } from './enumerate.js';
 import { symmetryOrder, distinctModes, displayRotation } from './shape.js';
 import { computeScaleEdges, computeShapeEdges } from './edges.js';
@@ -61,15 +61,28 @@ export function computeScaleLengthData(k: number): ScaleLengthData {
   });
 
   // Step 6: Fill in shape mode names from scale names
-  // For each shape, look at its modes (rotation values). For each mode,
-  // the scale at that rotation from the canonical has names we can use.
+  // Mode names are root-independent (just the quality/type name).
+  // For each mode, collect the unique type names from all transpositions of that specific mode.
   for (const shape of shapes) {
     for (const mode of shape.modes) {
+      const nameSet = new Set<string>();
       const modeBitmask = rotate(shape.canonical, mode.rotation);
-      const scaleEntry = scales.find(s => s.bitmask === modeBitmask);
-      if (scaleEntry && scaleEntry.names.length > 0) {
-        mode.names = scaleEntry.names.map(n => `${n.root} ${n.name}`);
+      // Check all 12 transpositions of this mode's bitmask
+      for (let t = 0; t < 12; t++) {
+        const transposed = rotate(modeBitmask, t);
+        const scaleEntry = scales.find(s => s.bitmask === transposed);
+        if (scaleEntry) {
+          for (const n of scaleEntry.names) {
+            // The mode bitmask always has bit 0 set (root at position 0).
+            // After transposing by t, the root moves to pitch class t.
+            const rootName = ['C','Db','D','Eb','E','F','Gb','G','Ab','A','Bb','B'][t];
+            if (n.root === rootName) {
+              nameSet.add(n.name);
+            }
+          }
+        }
       }
+      mode.names = [...nameSet];
     }
   }
 

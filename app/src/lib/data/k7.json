@@ -1267,44 +1267,32 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "A 7#9#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "Ab 7#9#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "Gb 7#9#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "F 7#9#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "E 7#9#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "D 7#9#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
           "names": [
-            "C 7#9#11b13"
+            "7#9#11b13"
           ]
         }
       ],
@@ -1421,51 +1409,33 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "A hungarian major",
-            "A 13#9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "Ab hungarian major",
-            "Ab 13#9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "Gb hungarian major",
-            "Gb 13#9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "F hungarian major",
-            "F 13#9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "Eb hungarian major",
-            "Eb 13#9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "D hungarian major",
-            "D 13#9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
           "names": [
-            "C hungarian major",
-            "C 13#9#11"
+            "hungarian major",
+            "13#9#11"
           ]
         }
       ],
@@ -1512,52 +1482,35 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Gb todi raga",
-            "Db persian"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "F todi raga",
-            "C persian"
+            "persian"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "E todi raga",
-            "B persian"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "Db todi raga",
-            "Ab persian"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
           "names": [
-            "C todi raga",
-            "G persian"
+            "todi raga"
           ]
         },
         {
           "rotation": 5,
-          "names": [
-            "B todi raga",
-            "Gb persian"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
-          "names": [
-            "A todi raga",
-            "E persian"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 743
@@ -1708,44 +1661,32 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "A augmented heptatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "Ab augmented heptatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "G augmented heptatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "F augmented heptatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "E augmented heptatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "Db augmented heptatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
           "names": [
-            "C augmented heptatonic"
+            "augmented heptatonic"
           ]
         }
       ],
@@ -1862,45 +1803,33 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db balinese"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C balinese"
+            "balinese"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "B balinese"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "A balinese"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "G balinese"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "F balinese"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
-          "names": [
-            "E balinese"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 855
@@ -1912,85 +1841,43 @@
         {
           "rotation": 0,
           "names": [
-            "Db harmonic minor",
-            "C ultralocrian",
-            "Eb locrian 6",
-            "Gb dorian #4",
-            "Ab phrygian dominant",
-            "E major augmented",
-            "A lydian #9"
+            "ultralocrian"
           ]
         },
         {
           "rotation": 11,
           "names": [
-            "C harmonic minor",
-            "B ultralocrian",
-            "D locrian 6",
-            "F dorian #4",
-            "G phrygian dominant",
-            "Eb major augmented",
-            "Ab lydian #9"
+            "harmonic minor"
           ]
         },
         {
           "rotation": 9,
           "names": [
-            "Bb harmonic minor",
-            "A ultralocrian",
-            "C locrian 6",
-            "Eb dorian #4",
-            "F phrygian dominant",
-            "Db major augmented",
-            "Gb lydian #9"
+            "locrian 6"
           ]
         },
         {
           "rotation": 8,
           "names": [
-            "A harmonic minor",
-            "Ab ultralocrian",
-            "B locrian 6",
-            "D dorian #4",
-            "E phrygian dominant",
-            "C major augmented",
-            "F lydian #9"
+            "major augmented"
           ]
         },
         {
           "rotation": 6,
           "names": [
-            "G harmonic minor",
-            "Gb ultralocrian",
-            "A locrian 6",
-            "C dorian #4",
-            "D phrygian dominant",
-            "Bb major augmented",
-            "Eb lydian #9"
+            "dorian #4"
           ]
         },
         {
           "rotation": 4,
           "names": [
-            "F harmonic minor",
-            "E ultralocrian",
-            "G locrian 6",
-            "Bb dorian #4",
-            "C phrygian dominant",
-            "Ab major augmented",
-            "Db lydian #9"
+            "phrygian dominant"
           ]
         },
         {
           "rotation": 3,
           "names": [
-            "E harmonic minor",
-            "Eb ultralocrian",
-            "Gb locrian 6",
-            "A dorian #4",
-            "B phrygian dominant",
-            "G major augmented",
-            "C lydian #9"
+            "lydian #9"
           ]
         }
       ],
@@ -2002,45 +1889,33 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab 7b9b13#11"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "Gb 7b9b13#11"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "F 7b9b13#11"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "E 7b9b13#11"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "D 7b9b13#11"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C 7b9b13#11"
+            "7b9b13#11"
           ]
         },
         {
           "rotation": 3,
-          "names": [
-            "B 7b9b13#11"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1239
@@ -2051,59 +1926,37 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db double harmonic major",
-            "Gb hungarian minor",
-            "Ab oriental"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C double harmonic major",
-            "F hungarian minor",
-            "G oriental"
+            "double harmonic major"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "B double harmonic major",
-            "E hungarian minor",
-            "Gb oriental"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "Ab double harmonic major",
-            "Db hungarian minor",
-            "Eb oriental"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
           "names": [
-            "G double harmonic major",
-            "C hungarian minor",
-            "D oriental"
+            "hungarian minor"
           ]
         },
         {
           "rotation": 4,
           "names": [
-            "F double harmonic major",
-            "Bb hungarian minor",
-            "C oriental"
+            "oriental"
           ]
         },
         {
           "rotation": 3,
-          "names": [
-            "E double harmonic major",
-            "A hungarian minor",
-            "B oriental"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 871
@@ -2114,52 +1967,35 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Gb lydian diminished",
-            "Db harmonic major"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "F lydian diminished",
-            "C harmonic major"
+            "harmonic major"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "Eb lydian diminished",
-            "Bb harmonic major"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "Db lydian diminished",
-            "Ab harmonic major"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
           "names": [
-            "C lydian diminished",
-            "G harmonic major"
+            "lydian diminished"
           ]
         },
         {
           "rotation": 4,
-          "names": [
-            "Bb lydian diminished",
-            "F harmonic major"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
-          "names": [
-            "A lydian diminished",
-            "E harmonic major"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 875
@@ -2170,52 +2006,35 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "D flamenco",
-            "Ab 13b9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "C flamenco",
-            "Gb 13b9#11"
+            "flamenco"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "B flamenco",
-            "F 13b9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "A flamenco",
-            "Eb 13b9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "Ab flamenco",
-            "D 13b9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "Gb flamenco",
-            "C 13b9#11"
+            "13b9#11"
           ]
         },
         {
           "rotation": 3,
-          "names": [
-            "F flamenco",
-            "B 13b9#11"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1243
@@ -2261,45 +2080,33 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab double harmonic lydian"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "Gb double harmonic lydian"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "F double harmonic lydian"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "E double harmonic lydian"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "Db double harmonic lydian"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C double harmonic lydian"
+            "double harmonic lydian"
           ]
         },
         {
           "rotation": 3,
-          "names": [
-            "B double harmonic lydian"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 935
@@ -2415,45 +2222,33 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab enigmatic"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "Gb enigmatic"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "E enigmatic"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "D enigmatic"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "Db enigmatic"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C enigmatic"
+            "enigmatic"
           ]
         },
         {
           "rotation": 3,
-          "names": [
-            "B enigmatic"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1359
@@ -2464,73 +2259,40 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab locrian major",
-            "D leading whole tone",
-            "Gb lydian minor",
-            "Db neapolitan major",
-            "Gb 9#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "G locrian major",
-            "Db leading whole tone",
-            "F lydian minor",
-            "C neapolitan major",
-            "F 9#11b13"
+            "neapolitan major"
           ]
         },
         {
           "rotation": 10,
           "names": [
-            "Gb locrian major",
-            "C leading whole tone",
-            "E lydian minor",
-            "B neapolitan major",
-            "E 9#11b13"
+            "leading whole tone"
           ]
         },
         {
           "rotation": 8,
-          "names": [
-            "E locrian major",
-            "Bb leading whole tone",
-            "D lydian minor",
-            "A neapolitan major",
-            "D 9#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
           "names": [
-            "D locrian major",
-            "Ab leading whole tone",
-            "C lydian minor",
-            "G neapolitan major",
-            "C 9#11b13"
+            "lydian minor",
+            "9#11b13"
           ]
         },
         {
           "rotation": 4,
           "names": [
-            "C locrian major",
-            "Gb leading whole tone",
-            "Bb lydian minor",
-            "F neapolitan major",
-            "Bb 9#11b13"
+            "locrian major"
           ]
         },
         {
           "rotation": 2,
-          "names": [
-            "Bb locrian major",
-            "E leading whole tone",
-            "Ab lydian minor",
-            "Eb neapolitan major",
-            "Ab 9#11b13"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1367
@@ -2542,92 +2304,44 @@
         {
           "rotation": 0,
           "names": [
-            "Db melodic minor",
-            "C altered",
-            "Bb locrian #2",
-            "Ab mixolydian b6",
-            "Gb lydian dominant",
-            "E lydian augmented",
-            "Eb dorian b2",
-            "Gb 13#11"
+            "altered"
           ]
         },
         {
           "rotation": 11,
           "names": [
-            "C melodic minor",
-            "B altered",
-            "A locrian #2",
-            "G mixolydian b6",
-            "F lydian dominant",
-            "Eb lydian augmented",
-            "D dorian b2",
-            "F 13#11"
+            "melodic minor"
           ]
         },
         {
           "rotation": 9,
           "names": [
-            "Bb melodic minor",
-            "A altered",
-            "G locrian #2",
-            "F mixolydian b6",
-            "Eb lydian dominant",
-            "Db lydian augmented",
-            "C dorian b2",
-            "Eb 13#11"
+            "dorian b2"
           ]
         },
         {
           "rotation": 8,
           "names": [
-            "A melodic minor",
-            "Ab altered",
-            "Gb locrian #2",
-            "E mixolydian b6",
-            "D lydian dominant",
-            "C lydian augmented",
-            "B dorian b2",
-            "D 13#11"
+            "lydian augmented"
           ]
         },
         {
           "rotation": 6,
           "names": [
-            "G melodic minor",
-            "Gb altered",
-            "E locrian #2",
-            "D mixolydian b6",
-            "C lydian dominant",
-            "Bb lydian augmented",
-            "A dorian b2",
-            "C 13#11"
+            "lydian dominant",
+            "13#11"
           ]
         },
         {
           "rotation": 4,
           "names": [
-            "F melodic minor",
-            "E altered",
-            "D locrian #2",
-            "C mixolydian b6",
-            "Bb lydian dominant",
-            "Ab lydian augmented",
-            "G dorian b2",
-            "Bb 13#11"
+            "mixolydian b6"
           ]
         },
         {
           "rotation": 2,
           "names": [
-            "Eb melodic minor",
-            "D altered",
-            "C locrian #2",
-            "Bb mixolydian b6",
-            "Ab lydian dominant",
-            "Gb lydian augmented",
-            "F dorian b2",
-            "Ab 13#11"
+            "locrian #2"
           ]
         }
       ],
@@ -2640,92 +2354,44 @@
         {
           "rotation": 0,
           "names": [
-            "Db major",
-            "Bb minor",
-            "Eb dorian",
-            "Gb lydian",
-            "Ab mixolydian",
-            "F phrygian",
-            "C locrian",
-            "Gb M13#11"
+            "locrian"
           ]
         },
         {
           "rotation": 11,
           "names": [
-            "C major",
-            "A minor",
-            "D dorian",
-            "F lydian",
-            "G mixolydian",
-            "E phrygian",
-            "B locrian",
-            "F M13#11"
+            "major"
           ]
         },
         {
           "rotation": 9,
           "names": [
-            "Bb major",
-            "G minor",
-            "C dorian",
-            "Eb lydian",
-            "F mixolydian",
-            "D phrygian",
-            "A locrian",
-            "Eb M13#11"
+            "dorian"
           ]
         },
         {
           "rotation": 7,
           "names": [
-            "Ab major",
-            "F minor",
-            "Bb dorian",
-            "Db lydian",
-            "Eb mixolydian",
-            "C phrygian",
-            "G locrian",
-            "Db M13#11"
+            "phrygian"
           ]
         },
         {
           "rotation": 6,
           "names": [
-            "G major",
-            "E minor",
-            "A dorian",
-            "C lydian",
-            "D mixolydian",
-            "B phrygian",
-            "Gb locrian",
-            "C M13#11"
+            "lydian",
+            "M13#11"
           ]
         },
         {
           "rotation": 4,
           "names": [
-            "F major",
-            "D minor",
-            "G dorian",
-            "Bb lydian",
-            "C mixolydian",
-            "A phrygian",
-            "E locrian",
-            "Bb M13#11"
+            "mixolydian"
           ]
         },
         {
           "rotation": 2,
           "names": [
-            "Eb major",
-            "C minor",
-            "F dorian",
-            "Ab lydian",
-            "Bb mixolydian",
-            "G phrygian",
-            "D locrian",
-            "Ab M13#11"
+            "minor"
           ]
         }
       ],

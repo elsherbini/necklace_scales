@@ -875,39 +875,29 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db minor hexatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C minor hexatonic"
+            "minor hexatonic"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "Bb minor hexatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "A minor hexatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "G minor hexatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "F minor hexatonic"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 347
@@ -918,38 +908,28 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab 7#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "Gb 7#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "F 7#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "E 7#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "D 7#11b13"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C 7#11b13"
+            "7#11b13"
           ]
         }
       ],
@@ -1302,39 +1282,29 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db major sharp eleventh (lydian)"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C major sharp eleventh (lydian)"
+            "major sharp eleventh (lydian)"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "Bb major sharp eleventh (lydian)"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "Ab major sharp eleventh (lydian)"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "Gb major sharp eleventh (lydian)"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "F major sharp eleventh (lydian)"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 427
@@ -1345,45 +1315,31 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "F minor thirteenth",
-            "G 7sus4b9b13"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "Eb minor thirteenth",
-            "F 7sus4b9b13"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "D minor thirteenth",
-            "E 7sus4b9b13"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
           "names": [
-            "C minor thirteenth",
-            "D 7sus4b9b13"
+            "minor thirteenth"
           ]
         },
         {
           "rotation": 5,
           "names": [
-            "Bb minor thirteenth",
-            "C 7sus4b9b13"
+            "7sus4b9b13"
           ]
         },
         {
           "rotation": 4,
-          "names": [
-            "A minor thirteenth",
-            "B 7sus4b9b13"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1131
@@ -1394,45 +1350,31 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db maj7#9#11",
-            "F mMaj9b6"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C maj7#9#11",
-            "E mMaj9b6"
+            "maj7#9#11"
           ]
         },
         {
           "rotation": 8,
-          "names": [
-            "A maj7#9#11",
-            "Db mMaj9b6"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
           "names": [
-            "Ab maj7#9#11",
-            "C mMaj9b6"
+            "mMaj9b6"
           ]
         },
         {
           "rotation": 5,
-          "names": [
-            "Gb maj7#9#11",
-            "Bb mMaj9b6"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "F maj7#9#11",
-            "A mMaj9b6"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 435
@@ -1505,24 +1447,17 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db messiaen's mode #5",
-            "G messiaen's mode #5"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C messiaen's mode #5",
-            "Gb messiaen's mode #5"
+            "messiaen's mode #5"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "F messiaen's mode #5",
-            "B messiaen's mode #5"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 455
@@ -1905,39 +1840,29 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "F 7b9b13"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "E 7b9b13"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "D 7b9b13"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
           "names": [
-            "C 7b9b13"
+            "7b9b13"
           ]
         },
         {
           "rotation": 6,
-          "names": [
-            "B 7b9b13"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
-          "names": [
-            "Ab 7b9b13"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 619
@@ -1948,45 +1873,31 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "F 13b9",
-            "D 7b9#9"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "Eb 13b9",
-            "C 7b9#9"
+            "7b9#9"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "D 13b9",
-            "B 7b9#9"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
           "names": [
-            "C 13b9",
-            "A 7b9#9"
+            "13b9"
           ]
         },
         {
           "rotation": 6,
-          "names": [
-            "B 13b9",
-            "Ab 7b9#9"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
-          "names": [
-            "Ab 13b9",
-            "F 7b9#9"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1179
@@ -2090,44 +2001,30 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Eb prometheus neapolitan",
-            "A 7#9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "D prometheus neapolitan",
-            "Ab 7#9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
           "names": [
-            "C prometheus neapolitan",
-            "Gb 7#9#11"
+            "prometheus neapolitan"
           ]
         },
         {
           "rotation": 8,
-          "names": [
-            "B prometheus neapolitan",
-            "F 7#9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "Ab prometheus neapolitan",
-            "D 7#9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
           "names": [
-            "Gb prometheus neapolitan",
-            "C 7#9#11"
+            "7#9#11"
           ]
         }
       ],
@@ -2140,43 +2037,29 @@
         {
           "rotation": 0,
           "names": [
-            "C major blues",
-            "A minor blues"
+            "major blues"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "Bb major blues",
-            "G minor blues"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "A major blues",
-            "Gb minor blues"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "Ab major blues",
-            "F minor blues"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "F major blues",
-            "D minor blues"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
           "names": [
-            "Eb major blues",
-            "C minor blues"
+            "minor blues"
           ]
         }
       ],
@@ -2219,45 +2102,30 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Eb prometheus",
-            "Eb 13b5"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "D prometheus",
-            "D 13b5"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
           "names": [
-            "C prometheus",
-            "C 13b5"
+            "prometheus",
+            "13b5"
           ]
         },
         {
           "rotation": 7,
-          "names": [
-            "Bb prometheus",
-            "Bb 13b5"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "Ab prometheus",
-            "Ab 13b5"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
-          "names": [
-            "Gb prometheus",
-            "Gb 13b5"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 683
@@ -2268,39 +2136,29 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "F dominant thirteenth"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "Eb dominant thirteenth"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "D dominant thirteenth"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
           "names": [
-            "C dominant thirteenth"
+            "dominant thirteenth"
           ]
         },
         {
           "rotation": 5,
-          "names": [
-            "Bb dominant thirteenth"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
-          "names": [
-            "Ab dominant thirteenth"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1195
@@ -2311,38 +2169,28 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "A 7#9b13"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "Ab 7#9b13"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "F 7#9b13"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "E 7#9b13"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "D 7#9b13"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
           "names": [
-            "C 7#9b13"
+            "7#9b13"
           ]
         }
       ],
@@ -2354,63 +2202,35 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "G piongio",
-            "G 13sus4",
-            "F major thirteenth",
-            "F M7add13",
-            "D minor eleventh"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "F piongio",
-            "F 13sus4",
-            "Eb major thirteenth",
-            "Eb M7add13",
-            "C minor eleventh"
+            "minor eleventh"
           ]
         },
         {
           "rotation": 8,
-          "names": [
-            "Eb piongio",
-            "Eb 13sus4",
-            "Db major thirteenth",
-            "Db M7add13",
-            "Bb minor eleventh"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
           "names": [
-            "D piongio",
-            "D 13sus4",
-            "C major thirteenth",
-            "C M7add13",
-            "A minor eleventh"
+            "major thirteenth",
+            "M7add13"
           ]
         },
         {
           "rotation": 5,
           "names": [
-            "C piongio",
-            "C 13sus4",
-            "Bb major thirteenth",
-            "Bb M7add13",
-            "G minor eleventh"
+            "piongio",
+            "13sus4"
           ]
         },
         {
           "rotation": 3,
-          "names": [
-            "Bb piongio",
-            "Bb 13sus4",
-            "Ab major thirteenth",
-            "Ab M7add13",
-            "F minor eleventh"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1323
@@ -2471,38 +2291,28 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "A 13#9"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "Ab 13#9"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "F 13#9"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "Eb 13#9"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "D 13#9"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
           "names": [
-            "C 13#9"
+            "13#9"
           ]
         }
       ],
@@ -2515,44 +2325,30 @@
         {
           "rotation": 0,
           "names": [
-            "C 69#11",
-            "E m11A"
+            "69#11"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "Bb 69#11",
-            "D m11A"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
           "names": [
-            "Ab 69#11",
-            "C m11A"
+            "m11A"
           ]
         },
         {
           "rotation": 6,
-          "names": [
-            "Gb 69#11",
-            "Bb m11A"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "F 69#11",
-            "A m11A"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
-          "names": [
-            "Eb 69#11",
-            "G m11A"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1355
@@ -2564,23 +2360,13 @@
         {
           "rotation": 0,
           "names": [
-            "Db augmented",
-            "F augmented",
-            "A augmented",
-            "C six tone symmetric",
-            "E six tone symmetric",
-            "Ab six tone symmetric"
+            "six tone symmetric"
           ]
         },
         {
           "rotation": 11,
           "names": [
-            "C augmented",
-            "E augmented",
-            "Ab augmented",
-            "Eb six tone symmetric",
-            "G six tone symmetric",
-            "B six tone symmetric"
+            "augmented"
           ]
         }
       ],
@@ -2623,24 +2409,17 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "D 7b9#11",
-            "Ab 7b9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "C 7b9#11",
-            "Gb 7b9#11"
+            "7b9#11"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "F 7b9#11",
-            "B 7b9#11"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1235
@@ -2651,51 +2430,32 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab mystery #1",
-            "D 9#11",
-            "Ab 7#5b9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "Gb mystery #1",
-            "C 9#11",
-            "Gb 7#5b9#11"
+            "9#11"
           ]
         },
         {
           "rotation": 8,
-          "names": [
-            "E mystery #1",
-            "Bb 9#11",
-            "E 7#5b9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "D mystery #1",
-            "Ab 9#11",
-            "D 7#5b9#11"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C mystery #1",
-            "Gb 9#11",
-            "C 7#5b9#11"
+            "mystery #1",
+            "7#5b9#11"
           ]
         },
         {
           "rotation": 3,
-          "names": [
-            "B mystery #1",
-            "F 9#11",
-            "B 7#5b9#11"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1363
@@ -2707,18 +2467,8 @@
         {
           "rotation": 0,
           "names": [
-            "C whole tone",
-            "D whole tone",
-            "E whole tone",
-            "Gb whole tone",
-            "Ab whole tone",
-            "Bb whole tone",
-            "C 9#5#11",
-            "D 9#5#11",
-            "E 9#5#11",
-            "Gb 9#5#11",
-            "Ab 9#5#11",
-            "Bb 9#5#11"
+            "whole tone",
+            "9#5#11"
           ]
         }
       ],

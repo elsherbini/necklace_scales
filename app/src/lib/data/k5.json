@@ -547,38 +547,27 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Eb 13no5",
-            "Db M9b5"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "D 13no5",
-            "C M9b5"
+            "M9b5"
           ]
         },
         {
           "rotation": 9,
           "names": [
-            "C 13no5",
-            "Bb M9b5"
+            "13no5"
           ]
         },
         {
           "rotation": 7,
-          "names": [
-            "Bb 13no5",
-            "Ab M9b5"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "Ab 13no5",
-            "Gb M9b5"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 171
@@ -805,33 +794,25 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "E m9#5"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "D m9#5"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
           "names": [
-            "C m9#5"
+            "m9#5"
           ]
         },
         {
           "rotation": 6,
-          "names": [
-            "Bb m9#5"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
-          "names": [
-            "A m9#5"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1347
@@ -1004,33 +985,25 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db minor/major ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C minor/major ninth"
+            "minor/major ninth"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "Bb minor/major ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "A minor/major ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "F minor/major ninth"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 283
@@ -1068,33 +1041,25 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db M7b9"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C M7b9"
+            "M7b9"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "B M7b9"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "Ab M7b9"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "F M7b9"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 295
@@ -1105,33 +1070,25 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db major ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C major ninth"
+            "major ninth"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "Bb major ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "Ab major ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "F major ninth"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 299
@@ -1142,32 +1099,24 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab M6#11"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "Gb M6#11"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "F M6#11"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "Eb M6#11"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C M6#11"
+            "M6#11"
           ]
         }
       ],
@@ -1179,33 +1128,25 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "F mMaj7b6"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "E mMaj7b6"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
-          "names": [
-            "Db mMaj7b6"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
           "names": [
-            "C mMaj7b6"
+            "mMaj7b6"
           ]
         },
         {
           "rotation": 4,
-          "names": [
-            "A mMaj7b6"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 307
@@ -1216,38 +1157,27 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "D m9b5",
-            "E 7#5b9"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "C m9b5",
-            "D 7#5b9"
+            "m9b5"
           ]
         },
         {
           "rotation": 8,
           "names": [
-            "Bb m9b5",
-            "C 7#5b9"
+            "7#5b9"
           ]
         },
         {
           "rotation": 7,
-          "names": [
-            "A m9b5",
-            "B 7#5b9"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "Gb m9b5",
-            "Ab 7#5b9"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1299
@@ -1285,32 +1215,24 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab neapolitan major pentatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
-          "names": [
-            "G neapolitan major pentatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "Gb neapolitan major pentatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "D neapolitan major pentatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C neapolitan major pentatonic"
+            "neapolitan major pentatonic"
           ]
         }
       ],
@@ -1322,37 +1244,26 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab mixolydian pentatonic",
-            "Db M9sus4"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "G mixolydian pentatonic",
-            "C M9sus4"
+            "M9sus4"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "F mixolydian pentatonic",
-            "Bb M9sus4"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "D mixolydian pentatonic",
-            "G M9sus4"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C mixolydian pentatonic",
-            "F M9sus4"
+            "mixolydian pentatonic"
           ]
         }
       ],
@@ -1364,37 +1275,25 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab lydian dominant pentatonic",
-            "Ab lydian dominant seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
-          "names": [
-            "Gb lydian dominant pentatonic",
-            "Gb lydian dominant seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "F lydian dominant pentatonic",
-            "F lydian dominant seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "D lydian dominant pentatonic",
-            "D lydian dominant seventh"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C lydian dominant pentatonic",
-            "C lydian dominant seventh"
+            "lydian dominant pentatonic",
+            "lydian dominant seventh"
           ]
         }
       ],
@@ -1406,33 +1305,25 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db minor #7m pentatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C minor #7m pentatonic"
+            "minor #7m pentatonic"
           ]
         },
         {
           "rotation": 8,
-          "names": [
-            "A minor #7m pentatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "G minor #7m pentatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "F minor #7m pentatonic"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 339
@@ -1443,47 +1334,29 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab whole tone pentatonic",
-            "E 9#5",
-            "E 9b13",
-            "D 9b5"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "Gb whole tone pentatonic",
-            "D 9#5",
-            "D 9b13",
-            "C 9b5"
+            "9b5"
           ]
         },
         {
           "rotation": 8,
           "names": [
-            "E whole tone pentatonic",
-            "C 9#5",
-            "C 9b13",
-            "Bb 9b5"
+            "9#5",
+            "9b13"
           ]
         },
         {
           "rotation": 6,
-          "names": [
-            "D whole tone pentatonic",
-            "Bb 9#5",
-            "Bb 9b13",
-            "Ab 9b5"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C whole tone pentatonic",
-            "Ab 9#5",
-            "Ab 9b13",
-            "Gb 9b5"
+            "whole tone pentatonic"
           ]
         }
       ],
@@ -1495,37 +1368,26 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab 7b6",
-            "E maj9#5"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "F 7b6",
-            "Db maj9#5"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
           "names": [
-            "E 7b6",
-            "C maj9#5"
+            "maj9#5"
           ]
         },
         {
           "rotation": 6,
-          "names": [
-            "D 7b6",
-            "Bb maj9#5"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C 7b6",
-            "Ab maj9#5"
+            "7b6"
           ]
         }
       ],
@@ -1537,38 +1399,27 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db ionian pentatonic",
-            "F pelog"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C ionian pentatonic",
-            "E pelog"
+            "ionian pentatonic"
           ]
         },
         {
           "rotation": 7,
           "names": [
-            "Ab ionian pentatonic",
-            "C pelog"
+            "pelog"
           ]
         },
         {
           "rotation": 6,
-          "names": [
-            "G ionian pentatonic",
-            "B pelog"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "F ionian pentatonic",
-            "A pelog"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 355
@@ -1579,33 +1430,25 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "D super locrian pentatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "C super locrian pentatonic"
+            "super locrian pentatonic"
           ]
         },
         {
           "rotation": 7,
-          "names": [
-            "A super locrian pentatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "Ab super locrian pentatonic"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "Gb super locrian pentatonic"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 651
@@ -1616,32 +1459,24 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Ab 7add6"
-          ]
+          "names": []
         },
         {
           "rotation": 9,
-          "names": [
-            "F 7add6"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
-          "names": [
-            "Eb 7add6"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "D 7add6"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "C 7add6"
+            "7add6"
           ]
         }
       ],
@@ -1654,51 +1489,30 @@
         {
           "rotation": 0,
           "names": [
-            "G kumoijoshi",
-            "C hirajoshi",
-            "D iwato",
-            "Ab lydian pentatonic",
-            "Ab major seventh sharp eleventh"
+            "hirajoshi"
           ]
         },
         {
           "rotation": 10,
           "names": [
-            "F kumoijoshi",
-            "Bb hirajoshi",
-            "C iwato",
-            "Gb lydian pentatonic",
-            "Gb major seventh sharp eleventh"
+            "iwato"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "E kumoijoshi",
-            "A hirajoshi",
-            "B iwato",
-            "F lydian pentatonic",
-            "F major seventh sharp eleventh"
-          ]
+          "names": []
         },
         {
           "rotation": 5,
           "names": [
-            "C kumoijoshi",
-            "F hirajoshi",
-            "G iwato",
-            "Db lydian pentatonic",
-            "Db major seventh sharp eleventh"
+            "kumoijoshi"
           ]
         },
         {
           "rotation": 4,
           "names": [
-            "B kumoijoshi",
-            "E hirajoshi",
-            "Gb iwato",
-            "C lydian pentatonic",
-            "C major seventh sharp eleventh"
+            "lydian pentatonic",
+            "major seventh sharp eleventh"
           ]
         }
       ],
@@ -1738,41 +1552,27 @@
         {
           "rotation": 0,
           "names": [
-            "C flat six pentatonic",
-            "Ab lydian #5p pentatonic",
-            "E 7#5#9"
+            "flat six pentatonic"
           ]
         },
         {
           "rotation": 10,
-          "names": [
-            "Bb flat six pentatonic",
-            "Gb lydian #5p pentatonic",
-            "D 7#5#9"
-          ]
+          "names": []
         },
         {
           "rotation": 8,
           "names": [
-            "Ab flat six pentatonic",
-            "E lydian #5p pentatonic",
-            "C 7#5#9"
+            "7#5#9"
           ]
         },
         {
           "rotation": 5,
-          "names": [
-            "F flat six pentatonic",
-            "Db lydian #5p pentatonic",
-            "A 7#5#9"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
           "names": [
-            "E flat six pentatonic",
-            "C lydian #5p pentatonic",
-            "Ab 7#5#9"
+            "lydian #5p pentatonic"
           ]
         }
       ],
@@ -1811,58 +1611,32 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "G in-sen",
-            "D locrian pentatonic",
-            "F flat three pentatonic",
-            "F m69",
-            "G suspended fourth flat ninth",
-            "G 11b9"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "F in-sen",
-            "C locrian pentatonic",
-            "Eb flat three pentatonic",
-            "Eb m69",
-            "F suspended fourth flat ninth",
-            "F 11b9"
+            "locrian pentatonic"
           ]
         },
         {
           "rotation": 7,
           "names": [
-            "D in-sen",
-            "A locrian pentatonic",
-            "C flat three pentatonic",
-            "C m69",
-            "D suspended fourth flat ninth",
-            "D 11b9"
+            "flat three pentatonic",
+            "m69"
           ]
         },
         {
           "rotation": 5,
           "names": [
-            "C in-sen",
-            "G locrian pentatonic",
-            "Bb flat three pentatonic",
-            "Bb m69",
-            "C suspended fourth flat ninth",
-            "C 11b9"
+            "in-sen",
+            "suspended fourth flat ninth",
+            "11b9"
           ]
         },
         {
           "rotation": 4,
-          "names": [
-            "B in-sen",
-            "Gb locrian pentatonic",
-            "A flat three pentatonic",
-            "A m69",
-            "B suspended fourth flat ninth",
-            "B 11b9"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1187
@@ -1874,37 +1648,26 @@
         {
           "rotation": 0,
           "names": [
-            "C vietnamese 1",
-            "F minor ninth"
+            "vietnamese 1"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "A vietnamese 1",
-            "D minor ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 7,
           "names": [
-            "G vietnamese 1",
-            "C minor ninth"
+            "minor ninth"
           ]
         },
         {
           "rotation": 5,
-          "names": [
-            "F vietnamese 1",
-            "Bb minor ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 4,
-          "names": [
-            "E vietnamese 1",
-            "A minor ninth"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1315
@@ -1942,33 +1705,25 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Db M9#5sus4"
-          ]
+          "names": []
         },
         {
           "rotation": 11,
           "names": [
-            "C M9#5sus4"
+            "M9#5sus4"
           ]
         },
         {
           "rotation": 9,
-          "names": [
-            "Bb M9#5sus4"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "G M9#5sus4"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
-          "names": [
-            "E M9#5sus4"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 587
@@ -1979,38 +1734,27 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "Eb o7M7",
-            "D dominant flat ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "Db o7M7",
-            "C dominant flat ninth"
+            "dominant flat ninth"
           ]
         },
         {
           "rotation": 9,
           "names": [
-            "C o7M7",
-            "B dominant flat ninth"
+            "o7M7"
           ]
         },
         {
           "rotation": 6,
-          "names": [
-            "A o7M7",
-            "Ab dominant flat ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
-          "names": [
-            "Gb o7M7",
-            "F dominant flat ninth"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 1171
@@ -2048,37 +1792,26 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "A minor six pentatonic",
-            "D dominant ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "G minor six pentatonic",
-            "C dominant ninth"
+            "dominant ninth"
           ]
         },
         {
           "rotation": 8,
-          "names": [
-            "F minor six pentatonic",
-            "Bb dominant ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 6,
-          "names": [
-            "Eb minor six pentatonic",
-            "Ab dominant ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
           "names": [
-            "C minor six pentatonic",
-            "F dominant ninth"
+            "minor six pentatonic"
           ]
         }
       ],
@@ -2090,38 +1823,27 @@
       "modes": [
         {
           "rotation": 0,
-          "names": [
-            "F scriabin",
-            "D dominant sharp ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 10,
           "names": [
-            "Eb scriabin",
-            "C dominant sharp ninth"
+            "dominant sharp ninth"
           ]
         },
         {
           "rotation": 7,
           "names": [
-            "C scriabin",
-            "A dominant sharp ninth"
+            "scriabin"
           ]
         },
         {
           "rotation": 6,
-          "names": [
-            "B scriabin",
-            "Ab dominant sharp ninth"
-          ]
+          "names": []
         },
         {
           "rotation": 3,
-          "names": [
-            "Ab scriabin",
-            "F dominant sharp ninth"
-          ]
+          "names": []
         }
       ],
       "displayBitmask": 659
@@ -2133,71 +1855,35 @@
         {
           "rotation": 0,
           "names": [
-            "C major pentatonic",
-            "G ritusen",
-            "D egyptian",
-            "E malkos raga",
-            "A minor pentatonic",
-            "A m7add11",
-            "D eleventh",
-            "D 9sus4",
-            "C sixth added ninth"
+            "major pentatonic",
+            "sixth added ninth"
           ]
         },
         {
           "rotation": 10,
           "names": [
-            "Bb major pentatonic",
-            "F ritusen",
-            "C egyptian",
-            "D malkos raga",
-            "G minor pentatonic",
-            "G m7add11",
-            "C eleventh",
-            "C 9sus4",
-            "Bb sixth added ninth"
+            "egyptian",
+            "eleventh",
+            "9sus4"
           ]
         },
         {
           "rotation": 8,
           "names": [
-            "Ab major pentatonic",
-            "Eb ritusen",
-            "Bb egyptian",
-            "C malkos raga",
-            "F minor pentatonic",
-            "F m7add11",
-            "Bb eleventh",
-            "Bb 9sus4",
-            "Ab sixth added ninth"
+            "malkos raga"
           ]
         },
         {
           "rotation": 5,
           "names": [
-            "F major pentatonic",
-            "C ritusen",
-            "G egyptian",
-            "A malkos raga",
-            "D minor pentatonic",
-            "D m7add11",
-            "G eleventh",
-            "G 9sus4",
-            "F sixth added ninth"
+            "ritusen"
           ]
         },
         {
           "rotation": 3,
           "names": [
-            "Eb major pentatonic",
-            "Bb ritusen",
-            "F egyptian",
-            "G malkos raga",
-            "C minor pentatonic",
-            "C m7add11",
-            "F eleventh",
-            "F 9sus4",
-            "Eb sixth added ninth"
+            "minor pentatonic",
+            "m7add11"
           ]
         }
       ],
