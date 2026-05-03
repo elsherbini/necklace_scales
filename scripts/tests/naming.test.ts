@@ -59,4 +59,34 @@ describe('getScaleNames', () => {
     const keys = names.map(n => `${n.root}:${n.name}`);
     expect(new Set(keys).size).toBe(keys.length);
   });
+
+  it('identifies C major triad (k=3)', () => {
+    const cMajorTriad = bitmaskFromPitchClasses([0, 4, 7]);
+    const names = getScaleNames(cMajorTriad);
+    expect(names.some(n => n.root === 'C' && n.name.toLowerCase().includes('major'))).toBe(true);
+  });
+
+  it('identifies minor triad (k=3)', () => {
+    const cMinorTriad = bitmaskFromPitchClasses([0, 3, 7]);
+    const names = getScaleNames(cMinorTriad);
+    expect(names.some(n => n.root === 'C' && n.name.toLowerCase().includes('minor'))).toBe(true);
+  });
+
+  it('identifies dominant seventh chord (k=4)', () => {
+    const cDom7 = bitmaskFromPitchClasses([0, 4, 7, 10]);
+    const names = getScaleNames(cDom7);
+    expect(names.some(n => n.root === 'C' && n.name.toLowerCase().includes('seventh'))).toBe(true);
+  });
+
+  it('identifies diminished seventh chord (k=4)', () => {
+    const dim7 = bitmaskFromPitchClasses([0, 3, 6, 9]);
+    const names = getScaleNames(dim7);
+    expect(names.some(n => n.name.toLowerCase().includes('diminished'))).toBe(true);
+  });
+
+  it('identifies tritone / fifth dyad (k=2)', () => {
+    const fifth = bitmaskFromPitchClasses([0, 7]);
+    const names = getScaleNames(fifth);
+    expect(names.some(n => n.root === 'C' && n.name.toLowerCase().includes('fifth'))).toBe(true);
+  });
 });

@@ -1,4 +1,4 @@
-import { ScaleType, Interval } from 'tonal';
+import { ScaleType, ChordType, Interval } from 'tonal';
 import { pitchClassesFromBitmask } from './bitmask.js';
 
 const NOTE_NAMES = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
@@ -54,8 +54,7 @@ function intervalsToSemitones(intervals: string[]): number[] {
 
 /**
  * Get all scale/chord names for an absolute scale (bitmask).
- * Iterates over all registered scale types and all 12 possible roots,
- * returning matches where the pitch class set exactly equals the input bitmask.
+ * Checks both ScaleType and ChordType registries for matches.
  */
 export function getScaleNames(bitmask: number): ScaleName[] {
   const targetPcs = pitchClassesFromBitmask(bitmask);
@@ -63,30 +62,34 @@ export function getScaleNames(bitmask: number): ScaleName[] {
   const names: ScaleName[] = [];
   const seen = new Set<string>();
 
-  const allTypes = ScaleType.all();
+  // Collect all type registries (scales and chords)
+  const allTypes: { intervals: string[]; name: string; aliases?: string[] }[] = [
+    ...ScaleType.all(),
+    ...ChordType.all(),
+  ];
 
-  for (const scaleType of allTypes) {
-    // Skip empty/invalid scale types
-    if (!scaleType.intervals || scaleType.intervals.length === 0) continue;
+  for (const type of allTypes) {
+    if (!type.intervals || type.intervals.length === 0) continue;
 
-    const semitones = intervalsToSemitones(scaleType.intervals);
+    const semitones = intervalsToSemitones(type.intervals);
 
-    // Skip if this scale type has a different cardinality than our target
+    // Skip if cardinality doesn't match
     if (semitones.length !== targetPcs.length) continue;
 
-    // Try each of the 12 pitch classes as root
+    // Use name, or first alias if name is empty
+    const displayName = type.name || (type.aliases && type.aliases[0]) || '';
+    if (!displayName) continue;
+
+    // Try each pitch class as root
     for (let rootPc = 0; rootPc < 12; rootPc++) {
-      // Only consider roots that are in our pitch class set
       if (!targetSet.has(rootPc)) continue;
 
-      // Compute the pitch class set for this scale type rooted at rootPc
-      const scalePcs = new Set(semitones.map(s => (rootPc + s) % 12));
+      const pcs = new Set(semitones.map(s => (rootPc + s) % 12));
 
-      // Check exact match
-      if (scalePcs.size === targetSet.size) {
+      if (pcs.size === targetSet.size) {
         let match = true;
         for (const pc of targetSet) {
-          if (!scalePcs.has(pc)) {
+          if (!pcs.has(pc)) {
             match = false;
             break;
           }
@@ -94,11 +97,10 @@ export function getScaleNames(bitmask: number): ScaleName[] {
 
         if (match) {
           const rootName = NOTE_NAMES[rootPc];
-          const scaleName = scaleType.name;
-          const key = `${rootName}:${scaleName}`;
+          const key = `${rootName}:${displayName}`;
           if (!seen.has(key)) {
             seen.add(key);
-            names.push({ root: rootName, name: scaleName });
+            names.push({ root: rootName, name: displayName });
           }
         }
       }
