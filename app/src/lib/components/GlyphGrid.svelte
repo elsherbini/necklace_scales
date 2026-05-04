@@ -27,9 +27,11 @@
 
   function noteFill(bit: number, isOn: boolean): string {
     if (!isOn) return appState.resolvedTheme === 'dark' ? '#404040' : '#e5e5e5';
-    if (appState.viewMode !== 'scales') return appState.resolvedTheme === 'dark' ? '#d4d4d4' : '#404040';
+    const bwFill = appState.resolvedTheme === 'dark' ? '#d4d4d4' : '#404040';
+    if (appState.viewMode !== 'scales') return bwFill;
+    if (appState.colorScheme === 'bw') return bwFill;
     const group = bit % 3; // 0=cDim, 1=bbDim, 2=bDim
-    return DIM_COLORS[appState.colorScheme]?.[group] ?? '#404040';
+    return DIM_COLORS[appState.colorScheme]?.[group] ?? bwFill;
   }
 
   let container: HTMLDivElement | undefined = $state(undefined);
