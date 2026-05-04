@@ -65,6 +65,32 @@
   </div>
 
   <div>
+    <h2 class="text-sm font-semibold text-neutral-500 uppercase tracking-wide mb-2">Display</h2>
+    <div class="flex gap-1">
+      {#each [{ value: 'graph' as const, label: 'Graph' }, { value: 'grid' as const, label: 'Grid' }] as mode}
+        <button
+          class="px-3 py-1 text-sm rounded {appState.visualizationMode === mode.value ? 'bg-neutral-900 text-white' : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'}"
+          onclick={() => appState.visualizationMode = mode.value}
+        >
+          {mode.label}
+        </button>
+      {/each}
+    </div>
+    {#if appState.visualizationMode === 'grid'}
+      <div class="flex gap-1 mt-2">
+        {#each [{ value: 'strip' as const, label: 'Strip' }, { value: 'circle' as const, label: 'Circle' }] as style}
+          <button
+            class="px-2 py-0.5 text-xs rounded {appState.glyphStyle === style.value ? 'bg-neutral-700 text-white' : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'}"
+            onclick={() => appState.glyphStyle = style.value}
+          >
+            {style.label}
+          </button>
+        {/each}
+      </div>
+    {/if}
+  </div>
+
+  <div>
     <h2 class="text-sm font-semibold text-neutral-500 uppercase tracking-wide mb-2">Colors</h2>
     <div class="flex gap-1">
       {#each colorSchemes as scheme}
