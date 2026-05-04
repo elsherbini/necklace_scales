@@ -1,5 +1,6 @@
 <script lang="ts">
   import { appState } from '$lib/state.svelte';
+  import { maxChromaticRun } from '$lib/utils';
   import { forceSimulation, forceLink, forceManyBody, forceCenter, forceCollide } from 'd3-force';
   import type { SimulationNodeDatum, SimulationLinkDatum } from 'd3-force';
 
@@ -67,25 +68,6 @@
 
   function handleNodeClick(index: number) {
     appState.selectedNodeIndex = appState.selectedNodeIndex === index ? null : index;
-  }
-
-  /**
-   * Longest consecutive run of set bits in a 12-bit cyclic bitmask.
-   */
-  function maxChromaticRun(bitmask: number): number {
-    if (bitmask === 0) return 0;
-    let max = 0;
-    let run = 0;
-    // Walk 24 positions to handle wrap-around
-    for (let i = 0; i < 24; i++) {
-      if ((bitmask >> (i % 12)) & 1) {
-        run++;
-        if (run > max) max = run;
-      } else {
-        run = 0;
-      }
-    }
-    return max;
   }
 
   // Precompute max chromatic run per node (only meaningful for k=8)
