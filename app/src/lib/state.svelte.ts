@@ -4,11 +4,11 @@ import { getScaleLengthData } from '$lib/data/index';
 export const appState = createAppState();
 
 function createAppState() {
-  let selectedK = $state(7);
+  let selectedK = $state(8);
   let viewMode = $state<ViewMode>('shapes');
   let colorScheme = $state<ColorScheme>('bw');
   let selectedNodeIndex = $state<number | null>(null);
-  let visualizationMode = $state<VisualizationMode>('graph');
+  let visualizationMode = $state<VisualizationMode>('grid');
   let glyphStyle = $state<GlyphStyle>('strip');
 
   const data = $derived(getScaleLengthData(selectedK));

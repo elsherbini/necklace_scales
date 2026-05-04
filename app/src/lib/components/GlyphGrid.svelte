@@ -16,6 +16,21 @@
   const DOT_R = 2.5;
   const CIRCLE_GLYPH_SIZE = CIRCLE_R * 2 + 4;
 
+  // Diminished 7th color groups (0-indexed pitch classes)
+  // cDim: C,Eb,Gb,A = {0,3,6,9}, bbDim: Db,E,G,Bb = {1,4,7,10}, bDim: D,F,Ab,B = {2,5,8,11}
+  const DIM_COLORS: Record<string, [string, string, string]> = {
+    bw:          ['#404040', '#404040', '#404040'],
+    metaharmony: ['rgb(215,204,59)', 'rgb(216,37,84)', 'rgb(77,162,210)'],
+    elements:    ['rgb(59,179,75)', 'rgb(77,162,210)', 'rgb(216,37,84)'],
+  };
+
+  function noteFill(bit: number, isOn: boolean): string {
+    if (!isOn) return '#e5e5e5';
+    if (appState.viewMode !== 'scales') return '#404040';
+    const group = bit % 3; // 0=cDim, 1=bbDim, 2=bDim
+    return DIM_COLORS[appState.colorScheme]?.[group] ?? '#404040';
+  }
+
   let container: HTMLDivElement | undefined = $state(undefined);
   let width = $state(800);
 
@@ -56,9 +71,9 @@
         }));
 
     items.sort((a, b) =>
-      b.chromaticRun - a.chromaticRun
-      || b.offRun - a.offRun
-      || a.bitmask - b.bitmask
+      a.chromaticRun - b.chromaticRun
+      || a.offRun - b.offRun
+      || b.bitmask - a.bitmask
     );
     return items;
   });
@@ -151,7 +166,7 @@
               y={0}
               width={CELL_W - 0.5}
               height={CELL_H}
-              class={(node.bitmask >> bit) & 1 ? 'fill-neutral-800' : 'fill-neutral-200'}
+              fill={noteFill(bit, !!((node.bitmask >> bit) & 1))}
               rx="0.5"
             />
           {/each}
@@ -185,7 +200,7 @@
               cx={dotX}
               cy={dotY}
               r={DOT_R}
-              class={(node.bitmask >> bit) & 1 ? 'fill-neutral-800' : 'fill-neutral-200'}
+              fill={noteFill(bit, !!((node.bitmask >> bit) & 1))}
             />
           {/each}
         {/if}
