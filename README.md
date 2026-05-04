@@ -19,7 +19,7 @@ Interval:  1P   2m   2M   3m   3M   4P   4A   5P   5A   6M   7m   7M
 Then regenerate the JSON:
 
 ```sh
-cd scripts && npm run build && node dist/main.js
+cd scripts && npm run precompute
 ```
 
 ## Setup
@@ -36,7 +36,7 @@ cd ../app && npm install
 Generate scale data:
 
 ```sh
-cd scripts && npm run build && node dist/main.js
+cd scripts && npm run precompute
 ```
 
 Run the app locally:
