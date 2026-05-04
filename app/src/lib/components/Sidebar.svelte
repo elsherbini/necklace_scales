@@ -16,7 +16,6 @@
 
   const themes = [
     { value: 'light' as const, label: 'Light' },
-    { value: 'system' as const, label: 'System' },
     { value: 'dark' as const, label: 'Dark' },
   ];
 
@@ -46,7 +45,7 @@
     <div class="flex gap-1">
       {#each themes as t}
         <button
-          class="px-3 py-1 text-sm rounded {appState.theme === t.value ? 'bg-neutral-900 text-white dark:bg-white dark:text-neutral-900' : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700'}"
+          class="px-3 py-1 text-sm rounded {appState.resolvedTheme === t.value ? 'bg-neutral-900 text-white dark:bg-white dark:text-neutral-900' : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700'}"
           onclick={() => appState.theme = t.value}
         >
           {t.label}
