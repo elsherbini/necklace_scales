@@ -21,3 +21,26 @@ Then regenerate the JSON:
 ```sh
 cd scripts && npm run build && node dist/main.js
 ```
+
+## Setup
+
+Install [Node.js](https://nodejs.org/) (includes `npm` and `npx`).
+
+Install dependencies for both directories:
+
+```sh
+cd scripts && npm install
+cd ../app && npm install
+```
+
+Generate scale data:
+
+```sh
+cd scripts && npm run build && node dist/main.js
+```
+
+Run the app locally:
+
+```sh
+cd app && npm run dev
+```
