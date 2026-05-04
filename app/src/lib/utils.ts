@@ -38,7 +38,7 @@ export function trailingOffRun(bitmask: number): number {
   return count;
 }
 
-const PRIORITY_NAMES = new Set([
+export const PRIORITY_NAMES = new Set([
   'major sixth diminished',
   'minor sixth diminished',
   'dominant seventh diminished',

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { appState } from '$lib/state.svelte';
   import { AVAILABLE_K_VALUES } from '$lib/data/index';
-  import { sortShapeNames } from '$lib/utils';
+  import { sortShapeNames, PRIORITY_NAMES } from '$lib/utils';
 
   const viewModes = [
     { value: 'shapes' as const, label: 'Shapes' },
@@ -169,9 +169,15 @@
         <p class="text-xs text-neutral-500">Modes: {shape.modes.length}</p>
       {:else}
         {@const scale = appState.data.scales[appState.selectedNodeIndex]}
+        {@const bestName = scale.names.find(n => PRIORITY_NAMES.has(n.name)) ?? scale.names[0]}
         <p class="text-sm font-medium">
-          {scale.names[0] ? `${scale.names[0].root} ${scale.names[0].name}` : `Scale ${appState.selectedNodeIndex}`}
+          {bestName ? `${bestName.root} ${bestName.name}` : `Scale ${appState.selectedNodeIndex}`}
         </p>
+        {#if scale.names.length > 1}
+          <p class="text-xs text-neutral-500">
+            {scale.names.filter(n => n !== bestName).map(n => `${n.root} ${n.name}`).join(', ')}
+          </p>
+        {/if}
         <p class="text-xs text-neutral-500">Pitch classes: {scale.pitchClasses.join(', ')}</p>
       {/if}
     </div>
