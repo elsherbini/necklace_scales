@@ -1,6 +1,7 @@
 <script lang="ts">
   import { appState } from '$lib/state.svelte';
   import { AVAILABLE_K_VALUES } from '$lib/data/index';
+  import { sortShapeNames } from '$lib/utils';
 
   const viewModes = [
     { value: 'shapes' as const, label: 'Shapes' },
@@ -12,13 +13,6 @@
     { value: 'metaharmony' as const, label: 'Metaharmony' },
     { value: 'elements' as const, label: 'Elements' },
   ];
-
-  const PRIORITY_NAMES = new Set([
-    'major sixth diminished',
-    'minor sixth diminished',
-    'dominant seventh diminished',
-    'dominant seventh flat five diminished',
-  ]);
 
   let shapeFilterOpen = $state(false);
 
@@ -37,16 +31,7 @@
     appState.selectedShapeIndices = [];
   }
 
-  function sortNames(names: string[]): { primary: string[]; secondary: string[] } {
-    const priority = names.filter(n => PRIORITY_NAMES.has(n));
-    const messiaen = names.filter(n => n.toLowerCase().includes('messiaen'));
-    const rest = names.filter(n => !PRIORITY_NAMES.has(n) && !n.toLowerCase().includes('messiaen'));
-    const primary = [...priority, ...rest];
-    const secondary = messiaen;
-    // If nothing left as primary, use messiaen names
-    if (primary.length === 0) return { primary: secondary, secondary: [] };
-    return { primary, secondary };
-  }
+  const sortNames = sortShapeNames;
 </script>
 
 <aside class="w-64 h-full border-r border-neutral-200 p-4 flex flex-col gap-6 overflow-y-auto bg-white">

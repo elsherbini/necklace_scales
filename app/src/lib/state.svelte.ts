@@ -1,6 +1,6 @@
 import type { ViewMode, ColorScheme, VisualizationMode, GlyphStyle } from '$lib/types';
 import { getScaleLengthData } from '$lib/data/index';
-import { maxChromaticRun, trailingOffRun } from '$lib/utils';
+import { maxChromaticRun, trailingOffRun, sortShapeNames } from '$lib/utils';
 
 export const appState = createAppState();
 
@@ -25,7 +25,7 @@ function createAppState() {
       displayBitmask: s.displayBitmask,
       chromaticRun: maxChromaticRun(s.displayBitmask),
       offRun: trailingOffRun(s.displayBitmask),
-      name: s.modes[0]?.names[0] ?? '',
+      name: sortShapeNames(s.modes.flatMap(m => m.names)).primary[0] ?? '',
     })).sort((a, b) =>
       a.chromaticRun - b.chromaticRun
       || a.offRun - b.offRun

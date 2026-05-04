@@ -37,3 +37,24 @@ export function trailingOffRun(bitmask: number): number {
   }
   return count;
 }
+
+const PRIORITY_NAMES = new Set([
+  'major sixth diminished',
+  'minor sixth diminished',
+  'dominant seventh diminished',
+  'dominant seventh flat five diminished',
+]);
+
+/**
+ * Sort shape names into primary (display) and secondary (messiaen) groups.
+ * Returns the best primary name first.
+ */
+export function sortShapeNames(names: string[]): { primary: string[]; secondary: string[] } {
+  const priority = names.filter(n => PRIORITY_NAMES.has(n));
+  const messiaen = names.filter(n => n.toLowerCase().includes('messiaen'));
+  const rest = names.filter(n => !PRIORITY_NAMES.has(n) && !n.toLowerCase().includes('messiaen'));
+  const primary = [...priority, ...rest];
+  const secondary = messiaen;
+  if (primary.length === 0) return { primary: secondary, secondary: [] };
+  return { primary, secondary };
+}
