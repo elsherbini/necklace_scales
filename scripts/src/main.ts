@@ -1,4 +1,4 @@
-import { rotate, canonical, pitchClassesFromBitmask, bitmaskFromPitchClasses } from './bitmask.js';
+import { rotate, canonical, pitchClassesFromBitmask, bitmaskFromPitchClasses, complement } from './bitmask.js';
 import { enumerateScales, groupByShape } from './enumerate.js';
 import { symmetryOrder, distinctModes, displayRotation } from './shape.js';
 import { computeScaleEdges, computeShapeEdges } from './edges.js';
@@ -16,6 +16,75 @@ function findRotation(canon: number, scale: number): number {
     if (rotate(canon, r) === scale) return r;
   }
   return 0; // should never happen for valid inputs
+}
+
+/**
+ * Derive complement scale data (k=12-sourceK) from pre-computed source data.
+ * Preserves shape/scale array indices and edge arrays for layout reuse.
+ */
+export function deriveComplementData(source: ScaleLengthData, newK: number): ScaleLengthData {
+  if (newK !== 12 - source.k) {
+    throw new Error(`deriveComplementData: newK (${newK}) must equal 12 - source.k (${12 - source.k})`);
+  }
+
+  // Step 1: Build complement shapes, preserving array order
+  const shapes: ShapeData[] = source.shapes.map(srcShape => {
+    const compCanon = canonical(complement(srcShape.canonical));
+    const modes = distinctModes(compCanon);
+
+    return {
+      canonical: compCanon,
+      // Complement commutes with rotation, so symmetry order is preserved.
+      symmetryOrder: srcShape.symmetryOrder,
+      modes: modes.map(r => ({ rotation: r, names: [] as string[] })),
+      displayBitmask: displayRotation(compCanon),
+    };
+  });
+
+  // Step 2: Build complement scales, preserving array order
+  const scales: ScaleData[] = source.scales.map(srcScale => {
+    const newBitmask = complement(srcScale.bitmask);
+    const shape = shapes[srcScale.shapeIndex];
+    const rotation = findRotation(shape.canonical, newBitmask);
+
+    return {
+      bitmask: newBitmask,
+      pitchClasses: pitchClassesFromBitmask(newBitmask),
+      shapeIndex: srcScale.shapeIndex,
+      rotation,
+      names: getScaleNames(newBitmask),
+    };
+  });
+
+  // Step 3: Fill in shape mode names from scale names
+  for (const shape of shapes) {
+    for (const mode of shape.modes) {
+      const nameSet = new Set<string>();
+      const modeBitmask = rotate(shape.canonical, mode.rotation);
+      for (let t = 0; t < 12; t++) {
+        const transposed = rotate(modeBitmask, t);
+        const scaleEntry = scales.find(s => s.bitmask === transposed);
+        if (scaleEntry) {
+          for (const n of scaleEntry.names) {
+            const rootName = ['C','Db','D','Eb','E','F','Gb','G','Ab','A','Bb','B'][t];
+            if (n.root === rootName) {
+              nameSet.add(n.name);
+            }
+          }
+        }
+      }
+      mode.names = [...nameSet];
+    }
+  }
+
+  // Step 4: Edges are identical by index
+  return {
+    k: newK,
+    shapes,
+    scales,
+    shapeEdges: source.shapeEdges,
+    scaleEdges: source.scaleEdges,
+  };
 }
 
 /**
