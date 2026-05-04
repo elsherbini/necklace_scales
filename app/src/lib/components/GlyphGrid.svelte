@@ -42,10 +42,10 @@
     const items: GlyphNode[] = appState.viewMode === 'shapes'
       ? appState.data.shapes.map((s, i) => ({
           index: i,
-          bitmask: s.canonical,
+          bitmask: s.displayBitmask,
           label: appState.nodes[i]?.label ?? '',
-          chromaticRun: maxChromaticRun(s.canonical),
-          offRun: maxOffRun(s.canonical),
+          chromaticRun: maxChromaticRun(s.displayBitmask),
+          offRun: maxOffRun(s.displayBitmask),
         }))
       : appState.data.scales.map((s, i) => ({
           index: i,
