@@ -193,10 +193,22 @@ function main() {
   const outputDir = join(__dirname, '..', 'output');
   mkdirSync(outputDir, { recursive: true });
 
+  const computed = new Map<number, ScaleLengthData>();
+
   for (const k of [2, 3, 4, 5, 6, 7, 8]) {
     console.log(`Computing k=${k}...`);
     const data = computeScaleLengthData(k);
+    computed.set(k, data);
     const outPath = join(outputDir, `k${k}.json`);
+    writeFileSync(outPath, JSON.stringify(data, null, 2));
+    console.log(`  Wrote ${outPath} (${data.shapes.length} shapes, ${data.scales.length} scales)`);
+  }
+
+  // Derive complements: k=9 from k=3, k=10 from k=2
+  for (const [newK, sourceK] of [[9, 3], [10, 2]] as const) {
+    console.log(`Deriving k=${newK} from k=${sourceK}...`);
+    const data = deriveComplementData(computed.get(sourceK)!, newK);
+    const outPath = join(outputDir, `k${newK}.json`);
     writeFileSync(outPath, JSON.stringify(data, null, 2));
     console.log(`  Wrote ${outPath} (${data.shapes.length} shapes, ${data.scales.length} scales)`);
   }
