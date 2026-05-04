@@ -20,6 +20,23 @@
     'dominant seventh flat five diminished',
   ]);
 
+  let shapeFilterOpen = $state(false);
+
+  function toggleShape(index: number) {
+    const set = new Set(appState.selectedShapeIndices);
+    if (set.has(index)) set.delete(index);
+    else set.add(index);
+    appState.selectedShapeIndices = [...set];
+  }
+
+  function selectAllShapes() {
+    appState.selectedShapeIndices = appState.data.shapes.map((_, i) => i);
+  }
+
+  function deselectAllShapes() {
+    appState.selectedShapeIndices = [];
+  }
+
   function sortNames(names: string[]): { primary: string[]; secondary: string[] } {
     const priority = names.filter(n => PRIORITY_NAMES.has(n));
     const messiaen = names.filter(n => n.toLowerCase().includes('messiaen'));
@@ -89,6 +106,51 @@
       </div>
     {/if}
   </div>
+
+  {#if appState.viewMode === 'scales' && appState.visualizationMode === 'grid'}
+    <div>
+      <button
+        class="w-full flex items-center justify-between text-sm font-semibold text-neutral-500 uppercase tracking-wide mb-2"
+        onclick={() => shapeFilterOpen = !shapeFilterOpen}
+      >
+        Filter by Shape
+        <span class="text-xs">{shapeFilterOpen ? '\u25B2' : '\u25BC'}</span>
+      </button>
+      {#if shapeFilterOpen}
+        <div class="flex gap-1 mb-2">
+          <button
+            class="px-2 py-0.5 text-xs rounded bg-neutral-100 text-neutral-600 hover:bg-neutral-200"
+            onclick={selectAllShapes}
+          >Select All</button>
+          <button
+            class="px-2 py-0.5 text-xs rounded bg-neutral-100 text-neutral-600 hover:bg-neutral-200"
+            onclick={deselectAllShapes}
+          >Deselect All</button>
+        </div>
+        <div class="flex flex-col gap-0.5 max-h-64 overflow-y-auto">
+          {#each appState.sortedShapes as shape, i}
+            {#if i === 0 || shape.chromaticRun !== appState.sortedShapes[i - 1].chromaticRun}
+              <p class="text-xs text-neutral-400 mt-1 first:mt-0">Run {shape.chromaticRun}</p>
+            {/if}
+            <label class="flex items-center gap-1.5 text-xs text-neutral-700 cursor-pointer hover:bg-neutral-50 px-1 rounded">
+              <input
+                type="checkbox"
+                checked={appState.selectedShapeSet.has(shape.index)}
+                onchange={() => toggleShape(shape.index)}
+              />
+              <span class="text-neutral-400">{shape.index}</span>
+              {#if shape.name}
+                <span>{shape.name}</span>
+              {/if}
+            </label>
+          {/each}
+        </div>
+        <p class="text-xs text-neutral-400 mt-1">
+          {appState.selectedShapeIndices.length} of {appState.data.shapes.length} shapes
+        </p>
+      {/if}
+    </div>
+  {/if}
 
   <div>
     <h2 class="text-sm font-semibold text-neutral-500 uppercase tracking-wide mb-2">Colors</h2>

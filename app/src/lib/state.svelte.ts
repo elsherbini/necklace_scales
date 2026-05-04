@@ -1,5 +1,6 @@
 import type { ViewMode, ColorScheme, VisualizationMode, GlyphStyle } from '$lib/types';
 import { getScaleLengthData } from '$lib/data/index';
+import { maxChromaticRun, trailingOffRun } from '$lib/utils';
 
 export const appState = createAppState();
 
@@ -10,8 +11,27 @@ function createAppState() {
   let selectedNodeIndex = $state<number | null>(null);
   let visualizationMode = $state<VisualizationMode>('grid');
   let glyphStyle = $state<GlyphStyle>('strip');
+  let selectedShapeIndices = $state<number[]>(
+    Array.from({ length: getScaleLengthData(8).shapes.length }, (_, i) => i)
+  );
 
   const data = $derived(getScaleLengthData(selectedK));
+
+  const selectedShapeSet = $derived(new Set(selectedShapeIndices));
+
+  const sortedShapes = $derived.by(() => {
+    return data.shapes.map((s, i) => ({
+      index: i,
+      displayBitmask: s.displayBitmask,
+      chromaticRun: maxChromaticRun(s.displayBitmask),
+      offRun: trailingOffRun(s.displayBitmask),
+      name: s.modes[0]?.names[0] ?? '',
+    })).sort((a, b) =>
+      a.chromaticRun - b.chromaticRun
+      || a.offRun - b.offRun
+      || b.displayBitmask - a.displayBitmask
+    );
+  });
 
   const nodes = $derived(
     viewMode === 'shapes'
@@ -52,7 +72,11 @@ function createAppState() {
 
   return {
     get selectedK() { return selectedK; },
-    set selectedK(v: number) { selectedK = v; selectedNodeIndex = null; },
+    set selectedK(v: number) {
+      selectedK = v;
+      selectedNodeIndex = null;
+      selectedShapeIndices = getScaleLengthData(v).shapes.map((_, i) => i);
+    },
     get viewMode() { return viewMode; },
     set viewMode(v: ViewMode) { viewMode = v; selectedNodeIndex = null; },
     get colorScheme() { return colorScheme; },
@@ -67,5 +91,9 @@ function createAppState() {
     get glyphStyle() { return glyphStyle; },
     set glyphStyle(v: GlyphStyle) { glyphStyle = v; },
     get distances() { return distances; },
+    get selectedShapeIndices() { return selectedShapeIndices; },
+    set selectedShapeIndices(v: number[]) { selectedShapeIndices = v; },
+    get selectedShapeSet() { return selectedShapeSet; },
+    get sortedShapes() { return sortedShapes; },
   };
 }

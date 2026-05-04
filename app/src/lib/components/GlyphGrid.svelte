@@ -54,7 +54,7 @@
   }
 
   const sortedNodes = $derived.by(() => {
-    const items: GlyphNode[] = appState.viewMode === 'shapes'
+    let items: GlyphNode[] = appState.viewMode === 'shapes'
       ? appState.data.shapes.map((s, i) => ({
           index: i,
           bitmask: s.displayBitmask,
@@ -69,6 +69,13 @@
           chromaticRun: maxChromaticRun(s.bitmask),
           offRun: trailingOffRun(s.bitmask),
         }));
+
+    if (appState.viewMode === 'scales') {
+      const shapeSet = appState.selectedShapeSet;
+      items = items.filter(item =>
+        shapeSet.has(appState.data.scales[item.index].shapeIndex)
+      );
+    }
 
     items.sort((a, b) =>
       a.chromaticRun - b.chromaticRun
