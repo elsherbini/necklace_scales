@@ -1,0 +1,4 @@
+node_modules/
+scripts/output/
+app/build/
+app/.svelte-kit/
