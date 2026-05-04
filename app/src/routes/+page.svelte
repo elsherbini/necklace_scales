@@ -7,7 +7,7 @@
 
 <div class="h-screen flex">
   <Sidebar />
-  <main class="flex-1 bg-neutral-50">
+  <main class="flex-1 bg-neutral-50 dark:bg-neutral-950">
     {#if appState.visualizationMode === 'graph'}
       <Graph />
     {:else}

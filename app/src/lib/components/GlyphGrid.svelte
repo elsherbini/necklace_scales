@@ -2,14 +2,15 @@
   import { appState } from '$lib/state.svelte';
   import { maxChromaticRun, trailingOffRun } from '$lib/utils';
 
-  const CELL_W = 5;
-  const CELL_H = 5;
-  const STRIP_W = CELL_W * 12;
+  const BASE_CELL = 5;
+  const cellW = $derived(appState.viewMode === 'shapes' ? BASE_CELL * 2 : BASE_CELL);
+  const cellH = $derived(appState.viewMode === 'shapes' ? BASE_CELL * 2 : BASE_CELL);
+  const stripW = $derived(cellW * 12);
   const GLYPH_GAP = 3;
-  const ROW_HEIGHT = CELL_H + GLYPH_GAP;
+  const rowHeight = $derived(cellH + GLYPH_GAP);
   const LEFT_MARGIN = 30;
   const TOP_MARGIN = 30;
-  const COL_WIDTH = STRIP_W + 20;
+  const colWidth = $derived(stripW + 20);
 
   // Circle glyph constants
   const CIRCLE_R = 12;
@@ -25,8 +26,8 @@
   };
 
   function noteFill(bit: number, isOn: boolean): string {
-    if (!isOn) return '#e5e5e5';
-    if (appState.viewMode !== 'scales') return '#404040';
+    if (!isOn) return appState.resolvedTheme === 'dark' ? '#404040' : '#e5e5e5';
+    if (appState.viewMode !== 'scales') return appState.resolvedTheme === 'dark' ? '#d4d4d4' : '#404040';
     const group = bit % 3; // 0=cDim, 1=bbDim, 2=bDim
     return DIM_COLORS[appState.colorScheme]?.[group] ?? '#404040';
   }
@@ -70,11 +71,13 @@
           offRun: trailingOffRun(s.bitmask),
         }));
 
+    const shapeSet = appState.selectedShapeSet;
     if (appState.viewMode === 'scales') {
-      const shapeSet = appState.selectedShapeSet;
       items = items.filter(item =>
         shapeSet.has(appState.data.scales[item.index].shapeIndex)
       );
+    } else {
+      items = items.filter(item => shapeSet.has(item.index));
     }
 
     items.sort((a, b) =>
@@ -107,7 +110,7 @@
     if (appState.distances === null) return LEFT_MARGIN;
     const d = appState.distances.get(node.index);
     if (d === undefined) return LEFT_MARGIN;
-    return LEFT_MARGIN + d * COL_WIDTH;
+    return LEFT_MARGIN + d * colWidth;
   }
 
   function handleClick(index: number) {
@@ -116,27 +119,27 @@
 
   const glyphSize = $derived(
     appState.glyphStyle === 'strip'
-      ? { w: STRIP_W, h: CELL_H }
+      ? { w: stripW, h: cellH }
       : { w: CIRCLE_GLYPH_SIZE, h: CIRCLE_GLYPH_SIZE }
   );
 
   const effectiveRowHeight = $derived(
-    appState.glyphStyle === 'strip' ? ROW_HEIGHT : CIRCLE_GLYPH_SIZE + GLYPH_GAP
+    appState.glyphStyle === 'strip' ? rowHeight : CIRCLE_GLYPH_SIZE + GLYPH_GAP
   );
 
   const svgHeight = $derived(TOP_MARGIN + sortedNodes.length * effectiveRowHeight + 20);
 </script>
 
 <div bind:this={container} class="w-full h-full overflow-y-auto overflow-x-auto relative">
-  <svg width={Math.max(width, LEFT_MARGIN + (maxDist + 1) * COL_WIDTH + 20)} height={svgHeight}>
+  <svg width={Math.max(width, LEFT_MARGIN + (maxDist + 1) * colWidth + 20)} height={svgHeight}>
     <!-- Column headers (distance labels) when a node is selected -->
     {#if appState.distances !== null}
       {#each Array.from({ length: maxDist + 1 }, (_, i) => i) as d}
         <text
-          x={LEFT_MARGIN + d * COL_WIDTH + glyphSize.w / 2}
+          x={LEFT_MARGIN + d * colWidth + glyphSize.w / 2}
           y={14}
           text-anchor="middle"
-          class="fill-neutral-400 text-[10px]"
+          class="fill-neutral-400 dark:fill-neutral-500 text-[10px]"
         >{d}</text>
       {/each}
     {/if}
@@ -146,7 +149,7 @@
       <text
         x={4}
         y={TOP_MARGIN + g.yIndex * effectiveRowHeight + glyphSize.h / 2 + 3}
-        class="fill-neutral-400 text-[9px]"
+        class="fill-neutral-400 dark:fill-neutral-500 text-[9px]"
       >{g.run}</text>
     {/each}
 
@@ -169,10 +172,10 @@
           <!-- Binary strip glyph -->
           {#each Array.from({ length: 12 }, (_, i) => i) as bit}
             <rect
-              x={bit * CELL_W}
+              x={bit * cellW}
               y={0}
-              width={CELL_W - 0.5}
-              height={CELL_H}
+              width={cellW - 0.5}
+              height={cellH}
               fill={noteFill(bit, !!((node.bitmask >> bit) & 1))}
               rx="0.5"
             />
@@ -181,8 +184,8 @@
             <rect
               x={-1}
               y={-1}
-              width={STRIP_W + 2}
-              height={CELL_H + 2}
+              width={stripW + 2}
+              height={cellH + 2}
               fill="none"
               class="stroke-blue-500"
               stroke-width="1.5"
@@ -196,7 +199,7 @@
             cy={CIRCLE_R + 2}
             r={CIRCLE_R}
             fill="none"
-            class={isSelected ? 'stroke-blue-500' : 'stroke-neutral-300'}
+            class={isSelected ? 'stroke-blue-500' : 'stroke-neutral-300 dark:stroke-neutral-600'}
             stroke-width={isSelected ? 1.5 : 0.5}
           />
           {#each Array.from({ length: 12 }, (_, i) => i) as bit}

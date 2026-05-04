@@ -139,14 +139,14 @@
           stroke-width="0.5"
           stroke-opacity={depth === null ? 1 : depth === 0 ? 1 : depth === 1 ? 0.8 : depth === 2 ? 0.5 : 0.15}
           class={depth === null
-            ? 'stroke-neutral-300'
+            ? 'stroke-neutral-300 dark:stroke-neutral-600'
             : depth === 0
               ? 'stroke-blue-600'
               : depth === 1
                 ? 'stroke-blue-400'
                 : depth === 2
-                  ? 'stroke-neutral-400'
-                  : 'stroke-neutral-200'}
+                  ? 'stroke-neutral-400 dark:stroke-neutral-500'
+                  : 'stroke-neutral-200 dark:stroke-neutral-700'}
         />
       {/if}
     {/each}
@@ -166,8 +166,8 @@
           class="cursor-pointer {nodeColor(node.id)
             ? 'hover:brightness-125'
             : (appState.distances === null
-              ? 'fill-neutral-600 hover:fill-neutral-900'
-              : 'fill-neutral-900')}"
+              ? 'fill-neutral-600 hover:fill-neutral-900 dark:fill-neutral-400 dark:hover:fill-neutral-200'
+              : 'fill-neutral-900 dark:fill-neutral-100')}"
           onclick={() => handleNodeClick(node.id)}
           onkeydown={(e: KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') handleNodeClick(node.id); }}
         />
@@ -177,12 +177,12 @@
   {/key}
 
   {#if appState.selectedK === 8}
-    <div class="absolute bottom-4 right-4 bg-white/90 border border-neutral-200 rounded px-3 py-2 text-xs">
-      <p class="font-medium text-neutral-600 mb-1">Max chromatic run</p>
+    <div class="absolute bottom-4 right-4 bg-white/90 dark:bg-neutral-900/90 border border-neutral-200 dark:border-neutral-700 rounded px-3 py-2 text-xs">
+      <p class="font-medium text-neutral-600 dark:text-neutral-400 mb-1">Max chromatic run</p>
       {#each [2, 3, 4, 5, 6, 7, 8] as run}
         <div class="flex items-center gap-2">
           <span class="inline-block w-3 h-3 rounded-full" style="background:{RUN_COLORS[run]}"></span>
-          <span class="text-neutral-700">{run}</span>
+          <span class="text-neutral-700 dark:text-neutral-300">{run}</span>
         </div>
       {/each}
     </div>
