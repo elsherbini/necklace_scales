@@ -28,3 +28,5 @@ export interface ScaleLengthData {
 
 export type ViewMode = 'shapes' | 'scales';
 export type ColorScheme = 'bw' | 'metaharmony' | 'elements';
+export type VisualizationMode = 'graph' | 'grid';
+export type GlyphStyle = 'strip' | 'circle';

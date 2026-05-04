@@ -116,53 +116,22 @@
     return run != null ? RUN_COLORS[run] ?? '#6b7280' : null;
   }
 
-  // BFS distance from selected node
-  const distances = $derived.by(() => {
-    if (appState.selectedNodeIndex === null) return null;
-    const dist = new Map<number, number>();
-    dist.set(appState.selectedNodeIndex, 0);
-    const queue = [appState.selectedNodeIndex];
-    // Build adjacency list
-    const adj = new Map<number, number[]>();
-    for (const [s, t] of appState.edges) {
-      if (!adj.has(s)) adj.set(s, []);
-      if (!adj.has(t)) adj.set(t, []);
-      adj.get(s)!.push(t);
-      adj.get(t)!.push(s);
-    }
-    let i = 0;
-    while (i < queue.length) {
-      const cur = queue[i++];
-      const d = dist.get(cur)!;
-      for (const neighbor of adj.get(cur) ?? []) {
-        if (!dist.has(neighbor)) {
-          dist.set(neighbor, d + 1);
-          queue.push(neighbor);
-        }
-      }
-    }
-    return dist;
-  });
-
-  const maxDist = $derived(
-    distances ? Math.max(...distances.values()) : 0
-  );
-
   function nodeOpacity(id: number): number {
-    if (!distances) return 1;
-    const d = distances.get(id);
+    const dists = appState.distances;
+    if (!dists) return 1;
+    const d = dists.get(id);
     if (d === undefined) return 0.05;
     if (d === 0) return 1;
-    // Fade from 1 at distance 1 to 0.1 at maxDist
-    return Math.max(0.1, 1 - (d - 1) / Math.max(1, maxDist - 1) * 0.9);
+    const md = Math.max(...dists.values());
+    return Math.max(0.1, 1 - (d - 1) / Math.max(1, md - 1) * 0.9);
   }
 
   function edgeDepth(sourceId: number, targetId: number): number | null {
-    if (!distances) return null;
-    const ds = distances.get(sourceId);
-    const dt = distances.get(targetId);
+    const dists = appState.distances;
+    if (!dists) return null;
+    const ds = dists.get(sourceId);
+    const dt = dists.get(targetId);
     if (ds === undefined || dt === undefined) return null;
-    // Edge depth = distance of the closer endpoint to selected node
     return Math.min(ds, dt);
   }
 </script>
@@ -171,7 +140,7 @@
   {#key tick}
   <svg {width} {height} class="absolute inset-0">
     <!-- Edges: render higher depth (farther) first so closer edges paint on top -->
-    {#each (distances
+    {#each (appState.distances
       ? [...simulationLinks].sort((a, b) => {
           const da = edgeDepth(a.source.id, a.target.id) ?? Infinity;
           const db = edgeDepth(b.source.id, b.target.id) ?? Infinity;
@@ -214,7 +183,7 @@
           opacity={nodeOpacity(node.id)}
           class="cursor-pointer {nodeColor(node.id)
             ? 'hover:brightness-125'
-            : (distances === null
+            : (appState.distances === null
               ? 'fill-neutral-600 hover:fill-neutral-900'
               : 'fill-neutral-900')}"
           onclick={() => handleNodeClick(node.id)}
