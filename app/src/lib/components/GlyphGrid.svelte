@@ -1,6 +1,6 @@
 <script lang="ts">
   import { appState } from '$lib/state.svelte';
-  import { maxChromaticRun, maxOffRun } from '$lib/utils';
+  import { maxChromaticRun, trailingOffRun } from '$lib/utils';
 
   const CELL_W = 5;
   const CELL_H = 5;
@@ -45,14 +45,14 @@
           bitmask: s.displayBitmask,
           label: appState.nodes[i]?.label ?? '',
           chromaticRun: maxChromaticRun(s.displayBitmask),
-          offRun: maxOffRun(s.displayBitmask),
+          offRun: trailingOffRun(s.displayBitmask),
         }))
       : appState.data.scales.map((s, i) => ({
           index: i,
           bitmask: s.bitmask,
           label: appState.nodes[i]?.label ?? '',
           chromaticRun: maxChromaticRun(s.bitmask),
-          offRun: maxOffRun(s.bitmask),
+          offRun: trailingOffRun(s.bitmask),
         }));
 
     items.sort((a, b) =>
