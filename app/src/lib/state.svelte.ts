@@ -1,6 +1,6 @@
-import type { ViewMode, ColorScheme, VisualizationMode, GlyphStyle } from '$lib/types';
+import type { ViewMode, ColorScheme, VisualizationMode, GlyphStyle, Theme } from '$lib/types';
 import { getScaleLengthData } from '$lib/data/index';
-import { maxChromaticRun, trailingOffRun, sortShapeNames } from '$lib/utils';
+import { maxChromaticRun, trailingOffRun, sortShapeNames, PRIORITY_NAMES } from '$lib/utils';
 
 export const appState = createAppState();
 
@@ -13,6 +13,9 @@ function createAppState() {
   let glyphStyle = $state<GlyphStyle>('strip');
   let selectedShapeIndices = $state<number[]>(
     Array.from({ length: getScaleLengthData(8).shapes.length }, (_, i) => i)
+  );
+  let theme = $state<Theme>(
+    (typeof localStorage !== 'undefined' && localStorage.theme as Theme) || 'system'
   );
 
   const data = $derived(getScaleLengthData(selectedK));
@@ -35,8 +38,17 @@ function createAppState() {
 
   const nodes = $derived(
     viewMode === 'shapes'
-      ? data.shapes.map((s, i) => ({ index: i, label: s.modes[0]?.names[0] ?? '' }))
-      : data.scales.map((s, i) => ({ index: i, label: s.names[0]?.name ?? '' }))
+      ? data.shapes.map((s, i) => ({
+          index: i,
+          label: sortShapeNames(s.modes.flatMap(m => m.names)).primary[0] ?? `Shape ${i}`,
+        }))
+      : data.scales.map((s, i) => {
+          const bestName = s.names.find(n => PRIORITY_NAMES.has(n.name)) ?? s.names[0];
+          const label = bestName
+            ? `${bestName.root} ${bestName.name}`
+            : `Shape ${s.shapeIndex} rotation ${s.rotation}`;
+          return { index: i, label };
+        })
   );
 
   const edges = $derived(
@@ -70,6 +82,22 @@ function createAppState() {
     return dist;
   });
 
+  function applyTheme(t: Theme) {
+    if (typeof document === 'undefined') return;
+    const isDark = t === 'dark' || (t === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.classList.toggle('dark', isDark);
+  }
+
+  const resolvedTheme = $derived.by(() => {
+    if (theme === 'system') {
+      if (typeof matchMedia !== 'undefined') {
+        return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      return 'light';
+    }
+    return theme;
+  });
+
   return {
     get selectedK() { return selectedK; },
     set selectedK(v: number) {
@@ -95,5 +123,15 @@ function createAppState() {
     set selectedShapeIndices(v: number[]) { selectedShapeIndices = v; },
     get selectedShapeSet() { return selectedShapeSet; },
     get sortedShapes() { return sortedShapes; },
+    get theme() { return theme; },
+    set theme(v: Theme) {
+      theme = v;
+      if (typeof localStorage !== 'undefined') {
+        if (v === 'system') localStorage.removeItem('theme');
+        else localStorage.theme = v;
+      }
+      applyTheme(v);
+    },
+    get resolvedTheme() { return resolvedTheme; },
   };
 }
