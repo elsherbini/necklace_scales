@@ -1,5 +1,6 @@
 import { ScaleType, ChordType, Interval } from 'tonal';
 import { pitchClassesFromBitmask } from './bitmask.js';
+import { customChords, customScales } from './custom-scales.js';
 
 const NOTE_NAMES = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
 
@@ -11,51 +12,14 @@ export interface ScaleName {
 /**
  * Register custom chord/scale types with tonal.
  */
-export function registerBarryHarrisScales(): void {
-  // Dyad intervals — both the interval and its inversion
-  // ChordType.add(intervals, aliases, fullName)
-  ChordType.add(['1P', '2m'], ['m2'], 'minor second');
-  ChordType.add(['1P', '7M'], ['M7'], 'major seventh');
-  ChordType.add(['1P', '2M'], ['M2'], 'major second');
-  ChordType.add(['1P', '7m'], ['m7'], 'minor seventh');
-  ChordType.add(['1P', '3m'], ['m3'], 'minor third');
-  ChordType.add(['1P', '6M'], ['M6'], 'major sixth');
-  ChordType.add(['1P', '3M'], ['M3'], 'major third');
-  ChordType.add(['1P', '6m'], ['m6'], 'minor sixth');
-  ChordType.add(['1P', '4P'], ['P4'], 'perfect fourth');
-  ChordType.add(['1P', '4A'], ['TT'], 'tritone');
+export function registerCustomScales(): void {
+  for (const chord of customChords) {
+    ChordType.add(chord.intervals, chord.aliases, chord.name);
+  }
 
-  // Maj6 diminished: C D E F G Ab A B
-  // Semitones from root: 0,2,4,5,7,8,9,11
-  ScaleType.add(
-    ['1P', '2M', '3M', '4P', '5P', '5A', '6M', '7M'],
-    'major sixth diminished',
-    ['maj6 diminished']
-  );
-
-  // Min6 diminished: C D Eb F G Ab A B
-  // Semitones from root: 0,2,3,5,7,8,9,11
-  ScaleType.add(
-    ['1P', '2M', '3m', '4P', '5P', '5A', '6M', '7M'],
-    'minor sixth diminished',
-    ['min6 diminished']
-  );
-
-  // Dom7 diminished: C D E F G Ab Bb B
-  // Semitones from root: 0,2,4,5,7,8,10,11
-  ScaleType.add(
-    ['1P', '2M', '3M', '4P', '5P', '5A', '7m', '7M'],
-    'dominant seventh diminished',
-    ['dom7 diminished']
-  );
-
-  // Dom7b5 diminished: C D E F Gb Ab Bb B
-  // Semitones from root: 0,2,4,5,6,8,10,11
-  ScaleType.add(
-    ['1P', '2M', '3M', '4P', '4A', '5A', '7m', '7M'],
-    'dominant seventh flat five diminished',
-    ['dom7b5 diminished']
-  );
+  for (const scale of customScales) {
+    ScaleType.add(scale.intervals, scale.name, scale.aliases);
+  }
 }
 
 /**

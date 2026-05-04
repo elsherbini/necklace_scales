@@ -1,10 +1,10 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { computeScaleLengthData, deriveComplementData } from '../src/main.js';
-import { registerBarryHarrisScales } from '../src/naming.js';
+import { registerCustomScales } from '../src/naming.js';
 import type { ScaleLengthData } from '../src/types.js';
 
 beforeAll(() => {
-  registerBarryHarrisScales();
+  registerCustomScales();
 });
 
 const EXPECTED: Record<number, { shapes: number; scales: number; scaleEdgesFormula: number }> = {

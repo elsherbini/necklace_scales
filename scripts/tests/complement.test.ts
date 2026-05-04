@@ -1,10 +1,10 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { computeScaleLengthData, deriveComplementData } from '../src/main.js';
-import { registerBarryHarrisScales } from '../src/naming.js';
+import { registerCustomScales } from '../src/naming.js';
 import { canonical, complement, popcount, rotate } from '../src/bitmask.js';
 
 beforeAll(() => {
-  registerBarryHarrisScales();
+  registerCustomScales();
 });
 
 describe('deriveComplementData', () => {

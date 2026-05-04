@@ -2,7 +2,7 @@ import { rotate, canonical, pitchClassesFromBitmask, bitmaskFromPitchClasses, co
 import { enumerateScales, groupByShape } from './enumerate.js';
 import { symmetryOrder, distinctModes, displayRotation } from './shape.js';
 import { computeScaleEdges, computeShapeEdges } from './edges.js';
-import { registerBarryHarrisScales, getScaleNames } from './naming.js';
+import { registerCustomScales, getScaleNames } from './naming.js';
 import type { ModeInfo, ShapeData, ScaleData, ScaleLengthData } from './types.js';
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -186,7 +186,7 @@ export function computeScaleLengthData(k: number): ScaleLengthData {
  * CLI entry point: precompute data for k=2..8 and write JSON files.
  */
 function main() {
-  registerBarryHarrisScales();
+  registerCustomScales();
 
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = dirname(__filename);

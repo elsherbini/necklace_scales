@@ -1,14 +1,14 @@
 import { describe, it, expect, beforeAll } from 'vitest';
-import { registerBarryHarrisScales, getScaleNames } from '../src/naming.js';
+import { registerCustomScales, getScaleNames } from '../src/naming.js';
 import { bitmaskFromPitchClasses } from '../src/bitmask.js';
 
 beforeAll(() => {
-  registerBarryHarrisScales();
+  registerCustomScales();
 });
 
-describe('registerBarryHarrisScales', () => {
+describe('registerCustomScales', () => {
   it('registers without throwing', () => {
-    expect(() => registerBarryHarrisScales()).not.toThrow();
+    expect(() => registerCustomScales()).not.toThrow();
   });
 });
 

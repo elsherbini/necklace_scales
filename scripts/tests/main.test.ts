@@ -1,9 +1,9 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { computeScaleLengthData } from '../src/main.js';
-import { registerBarryHarrisScales } from '../src/naming.js';
+import { registerCustomScales } from '../src/naming.js';
 
 beforeAll(() => {
-  registerBarryHarrisScales();
+  registerCustomScales();
 });
 
 describe('computeScaleLengthData', () => {
