@@ -70,4 +70,14 @@ export const customScales: CustomScaleEntry[] = [
     name: 'dominant seventh flat five diminished',
     aliases: ['dom7b5 diminished'],
   },
+  {
+    intervals: ['1P', '2M', '3m', '4P', '5P', '6M', '7m', '7M'], // semitones: 0, 2, 3, 5, 7, 9, 10, 11
+    name: 'dorian bebop',
+    aliases: ['lydian bebop'],
+  },
+  {
+    intervals: ['1P', '2m', '3m', '4P', '5P', '6m', '7m', '7M'], // semitones: 0, 1, 3, 5, 7, 8, 10, 11
+    name: 'phrygian bebop',
+    aliases: ['lydian dominant bebop'],
+  },
 ];

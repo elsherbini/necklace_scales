@@ -43,6 +43,8 @@ export const PRIORITY_NAMES = new Set([
   'minor sixth diminished',
   'dominant seventh diminished',
   'dominant seventh flat five diminished',
+  'dorian bebop',
+  'phrygian bebop',
 ]);
 
 /**
